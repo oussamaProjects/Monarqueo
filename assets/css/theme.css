@@ -12005,29 +12005,40 @@ textarea.form-control {
       #homecategories .categories .categorie .info .description p {
         font-size: 1.125rem;
         color: #fff; }
-
-@media (max-width: 767px) {
-  #homecategories .categories .categorie {
-    grid-column: 1/13 !important;
-    height: auto; }
-    #homecategories .categories .categorie .image img {
-      height: 100% !important; }
-    #homecategories .categories .categorie .title {
-      height: 100%; } }
-
-@media (max-width: 991px) {
-  #homecategories .categories .categorie {
-    grid-column: 1/7 !important;
-    height: auto; }
-    #homecategories .categories .categorie:nth-child(even) {
-      grid-column: 7/13 !important; }
-    #homecategories .categories .categorie:nth-child(1) {
-      /* autoprefixer: off */
-      grid-row: 1/2; }
-    #homecategories .categories .categorie .image img {
-      height: 100% !important; }
-    #homecategories .categories .categorie .title {
-      height: 100%; } }
+  @media (max-width: 991px) {
+    #homecategories .categories .categorie {
+      grid-column: 1/7 !important;
+      height: auto; }
+      #homecategories .categories .categorie:nth-child(even) {
+        grid-column: 7/13 !important; }
+      #homecategories .categories .categorie:nth-child(1) {
+        /* autoprefixer: off */
+        grid-row: 1/2; }
+      #homecategories .categories .categorie .image img {
+        height: 100% !important; }
+      #homecategories .categories .categorie .info {
+        height: 100%; } }
+  @media (max-width: 767px) {
+    #homecategories .categories .categorie {
+      grid-column: 1/13 !important;
+      height: auto;
+      min-height: 9.375rem;
+      background: #f5f5f5; }
+      #homecategories .categories .categorie:nth-child(2), #homecategories .categories .categorie:nth-child(3), #homecategories .categories .categorie:nth-child(4), #homecategories .categories .categorie:nth-child(5), #homecategories .categories .categorie:nth-child(6) {
+        grid-column: 1/13 !important; }
+      #homecategories .categories .categorie .image img {
+        height: 100% !important; }
+      #homecategories .categories .categorie .info {
+        height: 100%; }
+        #homecategories .categories .categorie .info .title {
+          font-size: 1.25rem; }
+        #homecategories .categories .categorie .info .court_description {
+          font-size: 1.125rem;
+          padding: 0.625rem 0; }
+        #homecategories .categories .categorie .info .description p {
+          font-size: 0.875rem;
+          color: #fff;
+          margin: 0; } }
 
 .carousel {
   float: none;
