@@ -12,11 +12,11 @@
     }
   }
   &[data-depth="1"] {
-    margin: 0.625rem;
+    margin: oe_rem(10px);
   }
   a:not([data-depth="0"]) {
     display: block;
-    padding: 0.625rem; 
+    padding: oe_rem(10px); 
     font-weight: 400;
   }
   a.dropdown-submenu {
@@ -116,21 +116,35 @@
   margin-top: 0;
 }
 
-#mobile_top_menu_wrapper {
-  margin-top: 0.625rem;
-  padding: 0.625rem 0;
+#mobile_top_menu_wrapper { 
+  margin-top: 2px;
+  padding: oe_rem(10px) 0;
   background: white;
+  overflow-y: scroll;
+  height: oe_rem(350px);
+  @include oe_box-shadow;
   #top-menu {
-    margin-bottom: 0.625rem;
+    margin-bottom: oe_rem(10px);
   }
   .top-menu {
     color: $gray-darker;
+    padding: oe_rem(5px) oe_rem(15px);
+    width: 100%;
+    &[data-depth="1"]{
+      padding-right: 0;
+    }
+
+    &[data-depth="2"]{
+      padding-top: 0;
+      padding-right: 0;
+    }
     .collapse-icons[aria-expanded="true"] {
       .add {
         display: none;
       }
       .remove {
         display: block;
+        margin: 0 auto;
       }
     }
     .collapse-icons .remove {
@@ -141,9 +155,10 @@
       padding: 0;
     }
     a[data-depth="0"] {
-      line-height: 35px;
-      height: 35px;
-      border-bottom: 1px solid $gray-lighter;
+      line-height: oe_rem(40px);
+      height: oe_rem(40px);
+      border-bottom: none;
+      padding: 0;
     }
     .collapse {
       display: none;
@@ -169,6 +184,7 @@
       min-height: 100%;
       max-height: 100%;
       background: $gray-lighter;
+      pointer-events: initial;
       ul[data-depth="0"] > li {
         border-bottom: 1px solid $gray;
       }
@@ -182,20 +198,23 @@
         > li {
           float: none;
           margin: 0;
+          padding: 0;
           a {
             text-transform: none;
           }
         }
       }
-      ul {
-        padding: 0;
+      ul { 
       }
       li > a {
-        padding: 0.625rem;
-        border-bottom: 1px solid white;
+        padding: 0;
+        border-bottom: none;
         font-weight: bold;
+        height: oe_rem(40px);
+        line-height: oe_rem(40px);
       }
       ul[data-depth="2"] li a {
+        font-weight: 400;
         padding: 0;
         margin: 0;
         position: relative;
@@ -216,21 +235,21 @@
       color: $gray;
     }
     .language-selector-wrapper {
-      padding: 0.625rem;
+      padding: oe_rem(10px);
       .language-selector {
         display: inline;
       }
     }
     .currency-selector {
-      padding: 0.625rem;
+      padding: oe_rem(10px);
     }
     #contact-link {
-      padding: 0.625rem;
+      padding: oe_rem(10px);
     }
     .user-info {
-      padding: 0 0.625rem;
+      padding: 0 oe_rem(10px);
       a {
-        padding: 0.625rem 0;
+        padding: oe_rem(10px) 0;
         display: block;
         width: 100%;
       }

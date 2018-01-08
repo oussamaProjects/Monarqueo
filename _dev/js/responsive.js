@@ -64,20 +64,20 @@ function toggleMobileFixed()
 {
 	if (prestashop.responsive.mobile) { 
 		// Oussama
-		$('.header-top').removeClass("fixed");
+		$('.header-top').stop().removeClass("fixed");
 		$(window).scroll(function () {
 			let scrollTop = $(this).scrollTop();
-			if (scrollTop  >= 20) { $('.header-nav').addClass("fixed"); }
-			else{ $('.header-nav').removeClass("fixed"); }
+			if (scrollTop  >= 20) { $('.header-nav').stop().addClass("fixed"); }
+			else{ $('.header-nav').stop().removeClass("fixed"); }
 		});
 		console.log("mobile");
 	} else { 
 		// Oussama
-		$('.header-nav').removeClass("fixed");
+		$('.header-nav').stop().removeClass("fixed");
 		$(window).scroll(function () {
 			let scrollTop = $(this).scrollTop();
-			if (scrollTop >= 20) { $('.header-top').addClass("fixed"); }
-			else{ $('.header-top').removeClass("fixed"); }
+			if (scrollTop >= 20) { $('.header-top').stop().addClass("fixed"); }
+			else{ $('.header-top').stop().removeClass("fixed"); }
 		}); 
 		console.log("desktop");		
 	}

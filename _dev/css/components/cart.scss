@@ -65,15 +65,7 @@
       }
       .product-line-grid{
           text-align: center;
-          @include flex(stretch, stretch, column);
-        .product-line-grid-image{
-        }
-        .product-line-grid-description{
-        }
-        .product-line-grid-prix{
-        }
-        .product-line-grid-actions{
-        }
+          @include flex(stretch, stretch, column); 
       }
     }
   }
