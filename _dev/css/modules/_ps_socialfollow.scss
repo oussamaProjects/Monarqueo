@@ -1,0 +1,22 @@
+.block-social{
+      height: oe_rem(40px);
+      @include flex(center, flex-end, row);
+      .social{
+            padding: 0 oe_rem(8px);
+            a{
+                 .fa{
+                  color: $gray;
+                  &:hover{
+                        color: $gray-light;
+                  }
+                 }
+            }
+      }
+}
+
+@include media-breakpoint-down(md) {
+      .block-social {
+            text-align: center;
+            display: none;
+      } 
+}
