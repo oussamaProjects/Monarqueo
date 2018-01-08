@@ -23,6 +23,9 @@
  * International Registered Trademark & Property of PrestaShop SA
  */
 import $ from 'jquery';
+import prestashop from 'prestashop';
+
+prestashop.responsive = prestashop.responsive || {};
 
 function initRmaItemSelector() {
   $('#order-return-form table thead input[type=checkbox]').on('click', function() {
@@ -38,18 +41,20 @@ function setupCustomerScripts() {
     initRmaItemSelector();
   }
 
+  if (!prestashop.responsive.mobile) {
+    let show_user_info = $("#show-user-info");
+    let user_info = $(".user-info");
+    show_user_info.on('click', function(e) {
+      e.preventDefault(); 
+    });
+    user_info.on('mouseenter', function(){
+      $(".user-info-box").stop().slideDown('300');
+    });
+    user_info.on('mouseleave', function(){
+      $(".user-info-box").stop().slideUp('300');
+    });
+  }
 
-  let show_user_info = $("#show-user-info");
-  let user_info = $(".user-info");
-  show_user_info.on('click', function(e) {
-    e.preventDefault(); 
-  });
-  user_info.on('mouseenter', function(){
-    $(".user-info-box").stop().slideDown('300');
-  });
-  user_info.on('mouseleave', function(){
-    $(".user-info-box").stop().slideUp('300');
-  });
 }
 
 $(document).ready(setupCustomerScripts);

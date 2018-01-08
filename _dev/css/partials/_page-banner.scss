@@ -13,6 +13,7 @@
        .titre{
            color: $white;
            font-size: oe_rem(24px);  
+           line-height: oe_rem(24px);  
            font-family: 'lemon-milk';
            font-weight: initial;
            text-transform: uppercase;
@@ -45,13 +46,18 @@
    @include media("<md"){    
        margin-top: 0;
        margin-bottom: oe_rem(20px); 
-       height: auto;;
+       height: auto;
+       min-height: oe_rem(60px);
        img{
            max-width: 100%;
        }
        .page_banner_wrapper{ 
            padding: oe_rem(15px);
-           .titre{ }
+           .titre{ 
+               margin: 0;
+               font-size: oe_rem(20px);  
+               line-height: oe_rem(20px);  
+           }
            .breadcrumb {
                display: none;
            }

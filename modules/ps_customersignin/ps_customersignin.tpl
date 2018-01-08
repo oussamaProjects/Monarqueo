@@ -25,9 +25,9 @@
 <div id="_desktop_user_info">
   <div class="user-info">
     {if $logged}
-      <a href="#" title="{l s='display info' d='Shop.Theme.Customeraccount'}" id="show-user-info">
+      <a href="{$my_account_url}" title="{l s='display info' d='Shop.Theme.Customeraccount'}" id="show-user-info">
         <span class="icon-user-unfollow"></span>
-        <span class="hidden-sm-down">{$customerLastName}</span>
+        <span>{$customerLastName}</span>
       </a>
       <div class="user-info-box">
         <a class="account" href="{$my_account_url}" title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}" rel="nofollow" >
