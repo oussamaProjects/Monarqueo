@@ -308,10 +308,11 @@
       padding: 0 oe_rem(15px);
       .top-logo {
         line-height: 50px;
-        vertical-align: middle;
-        width: 200px;
+        vertical-align: middle; 
         margin: 0 auto;
         text-align: center;
+        @include position(absolute, initial, 0, initial, 0);
+        width: oe_rem(150px);
         a {
           img {
             max-height: oe_rem(70px);

@@ -40,9 +40,10 @@
 @include media-breakpoint-down(sm) {
   .header-top {
     .search-widget {
-      float: none;
-      padding: oe_rem(10px);
       margin: 0;
+      float: none;
+      width: 100%;
+      padding: oe_rem(10px);
       form {
         margin: 0 auto;
         input[type="text"] {

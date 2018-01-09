@@ -8403,9 +8403,10 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
 /*** Responsive part ***/
 @media (max-width: 767px) {
   .header-top .search-widget {
+    margin: 0;
     float: none;
-    padding: 0.625rem;
-    margin: 0; }
+    width: 100%;
+    padding: 0.625rem; }
     .header-top .search-widget form {
       margin: 0 auto; }
       .header-top .search-widget form input[type="text"] {
@@ -12996,9 +12997,14 @@ textarea.form-control {
       #header .header-nav .top-logo {
         line-height: 50px;
         vertical-align: middle;
-        width: 200px;
         margin: 0 auto;
-        text-align: center; }
+        text-align: center;
+        position: absolute;
+        top: initial;
+        right: 0;
+        bottom: initial;
+        left: 0;
+        width: 9.375rem; }
         #header .header-nav .top-logo a img {
           max-height: 4.375rem;
           max-width: 100%; }
