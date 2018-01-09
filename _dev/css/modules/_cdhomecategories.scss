@@ -70,7 +70,7 @@
 				@include position(absolute, initial, 0, 0, 0);
 				color: $white;
 				text-align: center;
-				padding: oe_rem(20px) oe_rem(35px);
+				padding: oe_rem(20px) oe_rem(25px);
 				.title{
 					font-size: oe_rem(24px);
 					position: relative;
@@ -102,15 +102,25 @@
 			}
 		}
 		@include media("<lg"){
-			.categorie {
-				grid-column: 1/7 !important; 
+			.categorie { 
 				height: auto;
-				&:nth-child(even){
-					grid-column: 7/13 !important; 
+				&:nth-child(1){  
+					grid-column: 1/13;  
 				}
-				&:nth-child(1) { 
-					/* autoprefixer: off */
-					grid-row: 1/2;
+				&:nth-child(2){  
+					grid-column: 1/7; 
+				}
+				&:nth-child(3){  
+					grid-column: 7/13;  
+				}
+				&:nth-child(4){ 
+					grid-column: 1/13;  
+				}
+				&:nth-child(5){  
+					grid-column: 1/7; 
+				}
+				&:nth-child(6){  
+					grid-column: 7/13;  
 				}
 				.image {  
 					img{

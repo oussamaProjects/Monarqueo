@@ -60,15 +60,7 @@
     background: $gray-darker;
     height: oe_rem(40px); 
     @include flex(center, space-between, row);
-    padding: 0;
-    &.fixed{
-      z-index: 10; 
-      height: oe_rem(90px); 
-      margin: 0;
-      padding: oe_rem(10px);
-      @include position(fixed, 0, 0, initial, 0);
-      @include oe_box-shadow;
-    }
+    padding: 0; 
 
     #menu-icon {
       vertical-align: middle;
@@ -173,17 +165,19 @@
     @include oe_box-shadow;
     width: 100%;
     position: relative;
+    z-index: 9;
     > .container {
       position: relative;
     } 
     #_desktop_logo{
       height: 100%;
+      width: oe_rem(170px);
       padding: 5px 0;
       @include flex(center, center, row);
       a,
       img{
         width: auto;
-        height: oe_rem(80px);
+        height: 80px;
         max-height: 100%;
         display: block;
       }
@@ -203,6 +197,20 @@
   }
   .top-menu-link {
     margin-left: $medium-space;
+  }
+  @include media("<lg"){
+    .header-top {
+      &.fixed{
+        height: auto;
+        @include position(fixed, oe_rem(-90px), 0, initial, 0);
+        .top-menu {
+          a[data-depth="0"]{
+            height: oe_rem(60px);
+            line-height: oe_rem(65px);
+          }
+        }
+      } 
+    }
   }
 }
 .popover {
@@ -305,7 +313,15 @@
       margin: oe_rem(10px) 0;
       color: $gray-darker;  
       @include flex(stretch, flex-start, column);
-      padding: 0 oe_rem(15px);
+      padding: 0 oe_rem(15px); 
+      &.fixed{
+        z-index: 10; 
+        height: oe_rem(90px); 
+        margin: 0;
+        padding: oe_rem(10px);
+        @include position(fixed, 0, 0, initial, 0);
+        @include oe_box-shadow;
+      }
       .top-logo {
         line-height: 50px;
         vertical-align: middle; 
@@ -361,6 +377,7 @@
 
     .header-top {   
       height: auto;
+      padding-bottom: 0 !important;
       @include flex(stretch, flex-start, column);
       a[data-depth="0"] {
         color: $gray-darker;
@@ -470,6 +487,23 @@
   }
   #_mobile_my_contact_link{
     display: none;
+  }
+}
+
+@include media("<lg"){
+  #header {  
+    .header-top { 
+      height: auto;
+      padding-bottom: oe_rem(50px);
+      #_desktop_top_menu{
+        @include position(absolute, oe_rem(80px), 0, initial, 0);
+        text-align: center;
+      }
+      #_desktop_logo{ 
+        img{ 
+        }
+      } 
+    } 
   }
 }
 

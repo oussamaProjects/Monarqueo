@@ -41,6 +41,23 @@
 	}
 
 	@include media("<lg"){
+		box-shadow: none; 
+		.bloc{
+			@include flex(flex-start, flex-start, column-reverse);
+			.info{ 
+				width: 100%;
+				@include position(relative, 0, 0, 0, 0);  
+				.title{ 
+					margin: oe_rem(20px) 0;
+				} 
+			} 
+			.image {  
+				height: auto;
+				img {
+					height: auto;
+				}
+			}
+		}
 	}
 
 	@include media("<md"){

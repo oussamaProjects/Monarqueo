@@ -111,6 +111,16 @@
     max-width: inherit;
     border-radius: 0;
   }
+
+  @include media("<lg"){
+    margin: 0;
+    display: inline-block;
+    a[data-depth="0"] { 
+      height: oe_rem(60px);
+      line-height: oe_rem(60px); 
+      padding: 0 oe_rem(20px); 
+    }
+  }
 }
 .popover.bs-tether-element-attached-top {
   margin-top: 0;

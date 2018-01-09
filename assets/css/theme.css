@@ -8200,11 +8200,14 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
 
 #page_banner {
   width: 100%;
-  height: 16.875rem;
+  height: auto;
+  min-height: 6.25rem;
   background-color: #292627;
   margin: 1.5625rem 0 3.125rem;
   position: relative;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  #page_banner img {
+    max-width: 100%; }
   #page_banner .page_banner_wrapper {
     position: absolute;
     top: 0;
@@ -8276,10 +8279,7 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
     #page_banner {
       margin-top: 0;
       margin-bottom: 1.25rem;
-      height: auto;
       min-height: 3.75rem; }
-      #page_banner img {
-        max-width: 100%; }
       #page_banner .page_banner_wrapper {
         padding: 0.9375rem; }
         #page_banner .page_banner_wrapper .titre {
@@ -8360,6 +8360,7 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
 
 .search-widget {
   width: 25rem;
+  padding: 0 0.9375rem;
   margin: 0;
   max-width: 100%; }
   .search-widget form {
@@ -8385,6 +8386,14 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
       color: #9d9d9d; }
       .search-widget form button[type=submit] .search:hover {
         color: #9d9d9d; }
+  @media (max-width: 1199px) {
+    .search-widget {
+      width: auto;
+      display: none; } }
+  @media (max-width: 991px) {
+    .search-widget {
+      width: auto;
+      display: block; } }
 
 .header-top .search-widget form input[type="text"] {
   min-width: inherit;
@@ -8543,6 +8552,15 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
 .top-menu .popover {
   max-width: inherit;
   border-radius: 0; }
+
+@media (max-width: 991px) {
+  .top-menu {
+    margin: 0;
+    display: inline-block; }
+    .top-menu a[data-depth="0"] {
+      height: 3.75rem;
+      line-height: 3.75rem;
+      padding: 0 1.25rem; } }
 
 .popover.bs-tether-element-attached-top {
   margin-top: 0; }
@@ -9584,11 +9602,14 @@ body#checkout {
 
 .block-category {
   width: 100%;
-  height: 16.875rem;
+  height: auto;
+  min-height: 6.25rem;
   background-color: #292627;
   margin: 1.5625rem 0 3.125rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   position: relative; }
+  .block-category img {
+    max-width: 100%; }
   .block-category .block-category-wrapper {
     position: absolute;
     top: 0;
@@ -11984,7 +12005,7 @@ textarea.form-control {
       left: 0;
       color: #fff;
       text-align: center;
-      padding: 1.25rem 2.1875rem; }
+      padding: 1.25rem 1.5625rem; }
       #homecategories .categories .categorie .info .title {
         font-size: 1.5rem;
         position: relative; }
@@ -12014,13 +12035,19 @@ textarea.form-control {
         color: #fff; }
   @media (max-width: 991px) {
     #homecategories .categories .categorie {
-      grid-column: 1/7 !important;
       height: auto; }
-      #homecategories .categories .categorie:nth-child(even) {
-        grid-column: 7/13 !important; }
       #homecategories .categories .categorie:nth-child(1) {
-        /* autoprefixer: off */
-        grid-row: 1/2; }
+        grid-column: 1/13; }
+      #homecategories .categories .categorie:nth-child(2) {
+        grid-column: 1/7; }
+      #homecategories .categories .categorie:nth-child(3) {
+        grid-column: 7/13; }
+      #homecategories .categories .categorie:nth-child(4) {
+        grid-column: 1/13; }
+      #homecategories .categories .categorie:nth-child(5) {
+        grid-column: 1/7; }
+      #homecategories .categories .categorie:nth-child(6) {
+        grid-column: 7/13; }
       #homecategories .categories .categorie .image img {
         height: 100% !important; }
       #homecategories .categories .categorie .info {
@@ -12258,6 +12285,41 @@ textarea.form-control {
         width: 100%;
         height: auto;
         min-height: 100%; }
+  @media (max-width: 991px) {
+    .editorial {
+      box-shadow: none; }
+      .editorial .bloc {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -moz-align-items: flex-start;
+        -ms-align-items: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -moz-justify-content: flex-start;
+        -ms-justify-content: flex-start;
+        -webkit-box-pack: start;
+                justify-content: flex-start;
+        -ms-flex-pack: flex-start;
+        -moz-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+                flex-direction: column-reverse; }
+        .editorial .bloc .info {
+          width: 100%;
+          position: relative;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0; }
+          .editorial .bloc .info .title {
+            margin: 1.25rem 0; }
+        .editorial .bloc .image {
+          height: auto; }
+          .editorial .bloc .image img {
+            height: auto; } }
   @media (max-width: 767px) {
     .editorial {
       box-shadow: none;
@@ -12720,17 +12782,6 @@ textarea.form-control {
     -webkit-box-direction: normal;
             flex-direction: row;
     padding: 0; }
-    #header .header-nav.fixed {
-      z-index: 10;
-      height: 5.625rem;
-      margin: 0;
-      padding: 0.625rem;
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: initial;
-      left: 0;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
     #header .header-nav #menu-icon {
       vertical-align: middle;
       cursor: pointer; }
@@ -12833,7 +12884,8 @@ textarea.form-control {
             flex-direction: row;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     width: 100%;
-    position: relative; }
+    position: relative;
+    z-index: 9; }
     #header .header-top.fixed {
       z-index: 10;
       height: 3.75rem;
@@ -12849,6 +12901,7 @@ textarea.form-control {
       position: relative; }
     #header .header-top #_desktop_logo {
       height: 100%;
+      width: 10.625rem;
       padding: 5px 0;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -12871,7 +12924,7 @@ textarea.form-control {
       #header .header-top #_desktop_logo a,
       #header .header-top #_desktop_logo img {
         width: auto;
-        height: 5rem;
+        height: 80px;
         max-height: 100%;
         display: block; }
     #header .header-top .menu > ul > li {
@@ -12898,6 +12951,17 @@ textarea.form-control {
               flex-direction: row; }
   #header .top-menu-link {
     margin-left: 1.25rem; }
+  @media (max-width: 991px) {
+    #header .header-top.fixed {
+      height: auto;
+      position: fixed;
+      top: -5.625rem;
+      right: 0;
+      bottom: initial;
+      left: 0; }
+      #header .header-top.fixed .top-menu a[data-depth="0"] {
+        height: 3.75rem;
+        line-height: 4.0625rem; } }
 
 .popover {
   font-family: inherit; }
@@ -12994,6 +13058,17 @@ textarea.form-control {
       -webkit-box-direction: normal;
               flex-direction: column;
       padding: 0 0.9375rem; }
+      #header .header-nav.fixed {
+        z-index: 10;
+        height: 5.625rem;
+        margin: 0;
+        padding: 0.625rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: initial;
+        left: 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
       #header .header-nav .top-logo {
         line-height: 50px;
         vertical-align: middle;
@@ -13056,6 +13131,7 @@ textarea.form-control {
           display: none; }
     #header .header-top {
       height: auto;
+      padding-bottom: 0 !important;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -13198,6 +13274,18 @@ textarea.form-control {
     padding-right: 0 !important; }
   #_mobile_my_contact_link {
     display: none; } }
+
+@media (max-width: 991px) {
+  #header .header-top {
+    height: auto;
+    padding-bottom: 3.125rem; }
+    #header .header-top #_desktop_top_menu {
+      position: absolute;
+      top: 5rem;
+      right: 0;
+      bottom: initial;
+      left: 0;
+      text-align: center; } }
 
 .section-titre {
   text-align: center;

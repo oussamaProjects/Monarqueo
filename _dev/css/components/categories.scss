@@ -19,12 +19,16 @@
 .block-category {
 
   width: 100%;
-  height: oe_rem(270px);
+  height: auto;
+  // height: oe_rem(270px);
+  min-height: oe_rem(100px);
   background-color: $gray-darker;
   margin: oe_rem(25px) 0 oe_rem(50px); 
   @include oe_box-shadow;
   position: relative; 
-
+  img{
+    max-width: 100%;
+  }
   .block-category-wrapper{
     
     @include position(absolute, 0, 0, 0, 0);
