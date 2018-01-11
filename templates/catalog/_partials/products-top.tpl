@@ -30,7 +30,7 @@
       <p>{l s='1 produit' d='Shop.Theme.Catalog'}</p>
     {/if}
   </div>
-  <div class="col-md-6">
+  <div class="col-md-6 md-no-padding">
     <div class="row sort-by-row">
 
       {block name='sort_by'}

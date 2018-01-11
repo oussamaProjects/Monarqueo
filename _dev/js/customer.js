@@ -34,6 +34,16 @@ function initRmaItemSelector() {
       $(checkbox).prop('checked', checked);
     });
   });
+
+
+  $('#open_search_filters_wrapper button').on('click', function() {
+    $('#search_filters_wrapper').addClass('opend');
+  });
+
+  $('#search_filters_wrapper .close').on('click', function() {
+    $('#search_filters_wrapper').removeClass('opend');
+  });
+
 }
 
 function setupCustomerScripts() {

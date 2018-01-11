@@ -119,26 +119,6 @@
       .body {
         display: none;
       }
-    }
-    .blockcart {
-      background: $gray-darker; 
-      margin-left: 0.9375rem;
-      text-align: center;
-      white-space: nowrap;
-      a {
-        color: $gray-darker;
-        &:hover {
-          color: $gray-darker;
-        }
-      }
-      &.active {
-        a:hover {
-          color: $gray-darker;
-        }
-      }
-      .header {
-        margin-top: 0.125rem;
-      }
     } 
     .material-icons {
       line-height: inherit;
@@ -222,7 +202,7 @@
 #wrapper {
   background: white;
   box-shadow: inset 0 2px 5px 0 rgba(0,0,0,0.11);
-  padding-top: 1.563rem;
+  padding-top: oe_rem(30px);
   .banner {
     margin-bottom: 1.5rem;
     display: block;
@@ -260,6 +240,13 @@
       }
     }
   }
+  @include media("<lg"){
+    padding-top: oe_rem(60px);
+  }
+
+  @include media("<md"){
+    padding-top: oe_rem(30px);
+  }
 }
 
 /*** MAIN ***/
@@ -290,6 +277,9 @@
   &.notification-success{
     color: $brand-success !important;
   }
+  &.notification-success{
+    color: $brand-danger !important;
+  }
 }
 /*** FOOTER ***/
 #footer {
@@ -314,7 +304,7 @@
       margin: oe_rem(10px) 0;
       color: $gray-darker;  
       @include flex(stretch, flex-start, column);
-      padding: 0 oe_rem(15px); 
+      padding: 0 oe_rem(10px); 
       &.fixed{
         z-index: 10; 
         height: oe_rem(90px); 
@@ -359,6 +349,12 @@
         margin: 0.9375rem 4px;
         .logged {
           color: $gray;
+        }
+        span{
+         font-size: oe_rem(14px);
+         &.icon-user-unfollow{
+          font-size: oe_rem(16px);
+         }
         }
       }
       
@@ -417,7 +413,7 @@
   }
   #products .product-miniature,
   .featured-products .product-miniature {
-    margin: 0 auto;
+    margin: oe_rem(5px) auto ;
   }
  
   .menu,
@@ -438,7 +434,7 @@
   }
   #products .product-miniature,
   .featured-products .product-miniature {
-    margin: 0 auto;
+    margin: oe_rem(5px) auto ;
   }
   .sub-menu {
     left: 0;
@@ -483,8 +479,8 @@
 
 @include media-breakpoint-down(xs) {
   #left-column, #content-wrapper {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    // padding-left: 0 !important;
+    // padding-right: 0 !important;
   }
   #_mobile_my_contact_link{
     display: none;

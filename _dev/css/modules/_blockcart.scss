@@ -1,7 +1,8 @@
 /* module cart block */
 
-
-.blockcart {
+.blockcart {  
+	text-align: center;
+	white-space: nowrap;
 	float: right;
 	position: relative;
 	background: transparent;
@@ -17,10 +18,12 @@
 			  color: #ff0000;
 			}
 		 } 
-		 a{
+		 a{ 
+	  		color: $gray-darker; 
 			&:hover,
 			&:focus{
 			  text-decoration: none;
+			  color: $gray-darker;
 			}
 		 }
 	}
@@ -76,6 +79,7 @@
 						text-transform: capitalize;
 						font-size: oe_rem(14px);
 						line-height: oe_rem(20px);
+						font-family: 'lemon-milk';
 					}
 					.product-price {
 						display: block;
@@ -128,6 +132,13 @@
 				display: block;
 				color: $gray-light;
 			}
+		}
+	}
+	@include media("<md"){ 
+		.header{
+			span{
+				font-size: oe_rem(16px);  
+			}  
 		}
 	}
 }

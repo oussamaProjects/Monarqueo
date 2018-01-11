@@ -81,7 +81,7 @@
 
 	@include media("<md"){
 		box-shadow: none;
-		margin: oe_rem(15px) 0;
+		margin: oe_rem(10px) 0;
 		.bloc{
 			@include flex(flex-start, flex-start, column-reverse);
 			.info{ 

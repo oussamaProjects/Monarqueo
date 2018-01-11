@@ -54,7 +54,10 @@ h4,.h4 {
     line-height: initial;
 }
 h4, .h4 {font-size: 1rem; }
-  
+img{
+    max-width: 100%;
+}
+
 .dropdown-item:focus,
 .dropdown-item:hover {
     background: none;
@@ -199,7 +202,7 @@ input, textarea {
     }
 }
 .form-control-select {
-    height: 2.625rem;
+    height: oe_rem(50px) !important; 
     -moz-appearance: none;
     -webkit-appearance: none;
     background: $gray-light url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAPklEQVR4Ae3TwREAEBQD0V/6do4SXPZg7EsBhsQ8IEmSMOsiuEfg3gL3oXC7wK0bd1G4o8X9F4yIkyQfSrIByQBjp7QuND8AAAAASUVORK5CYII=") no-repeat scroll right 0.5rem center / 1.25rem 1.25rem;
@@ -545,8 +548,8 @@ input, textarea {
         width: 100%;
         color: $gray;
         padding: oe_rem(10px);
-        height: calc(2.5rem - 2px);
-        line-height: calc(2.5rem - 2px);
+        height: oe_rem(50px);
+        line-height: oe_rem(50px);
         cursor: pointer;
        
     }
@@ -621,6 +624,10 @@ input, textarea {
         width: 100%;
         margin: oe_rem(10px) 0;
     }
+ 
+    .md-no-padding{
+        padding: 0 !important;
+    } 
      
 }
 
