@@ -75,25 +75,7 @@
   }
 }
 
-#_desktop_cart{ 
-  color: $gray-darker;
-  .blockcart { 
-    margin: 0 oe_rem(10px);
-    span{
-      font-size: oe_rem(24px); 
-      &.cart-products-count{
-        font-size: oe_rem(14px); 
-        color: #ff0000;
-      }
-    } 
-    a{
-      &:hover,
-      &:focus{
-        text-decoration: none;
-      }
-    }
-  }
-}
+
 
 #block_myaccount_infos{
   .myaccount-title a{

@@ -328,7 +328,8 @@
     .remove-from-cart {
       color: $gray-darker;
       display: inline-block;
-      margin-top: 0.3125rem;
+      margin-top: 6px;
+      float: left;
     }
   }
 }

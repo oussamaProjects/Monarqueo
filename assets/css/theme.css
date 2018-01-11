@@ -11314,7 +11314,8 @@ li.product-flag {
   .product-line-grid-actions .product-price .remove-from-cart {
     color: #292627;
     display: inline-block;
-    margin-top: 0.3125rem; }
+    margin-top: 6px;
+    float: left; }
 
 /*** Responsive part ***/
 @media (max-width: 767px) {
@@ -11626,18 +11627,6 @@ li.product-flag {
         .block-social ul li a:hover {
           color: transparent; }
 
-#_desktop_cart {
-  color: #292627; }
-  #_desktop_cart .blockcart {
-    margin: 0 0.625rem; }
-    #_desktop_cart .blockcart span {
-      font-size: 1.5rem; }
-      #_desktop_cart .blockcart span.cart-products-count {
-        font-size: 0.875rem;
-        color: #ff0000; }
-    #_desktop_cart .blockcart a:hover, #_desktop_cart .blockcart a:focus {
-      text-decoration: none; }
-
 #block_myaccount_infos .myaccount-title a {
   color: #292627; }
   #block_myaccount_infos .myaccount-title a span {
@@ -11918,6 +11907,111 @@ textarea.form-control {
 @media (max-width: 575px) {
   .sitemap {
     margin-top: 0; } }
+
+/* module cart block */
+.blockcart {
+  float: right;
+  position: relative;
+  background: transparent;
+  height: auto;
+  margin: 0 0.625rem; }
+  .blockcart .header {
+    position: relative;
+    display: inline-block; }
+    .blockcart .header span {
+      font-size: 1.5rem; }
+      .blockcart .header span.cart-products-count {
+        font-size: 0.875rem;
+        color: #ff0000; }
+    .blockcart .header a:hover, .blockcart .header a:focus {
+      text-decoration: none; }
+  .blockcart .body {
+    margin: 1rem 0 0 0;
+    padding: 0 1rem;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    width: 20rem;
+    left: auto;
+    right: 0;
+    border: 0; }
+    @media (max-width: 479px) {
+      .blockcart .body {
+        width: 270px; } }
+    .blockcart .body ul {
+      margin: 0; }
+      .blockcart .body ul li {
+        padding: 1rem 0;
+        border-bottom: 1px solid #cccccc;
+        overflow: hidden; }
+        .blockcart .body ul li .img_content {
+          float: left;
+          margin: 0 1rem 0 0;
+          position: relative; }
+          .blockcart .body ul li .img_content .product-quantity {
+            position: absolute;
+            top: 0.3125rem;
+            left: 0.3125rem;
+            min-width: 1.5625rem;
+            line-height: 1.4375rem;
+            border-radius: 100%;
+            padding: 0.125rem 0 0;
+            text-align: center;
+            background: #f5f5f5;
+            color: #292627;
+            font-size: 0.75rem; }
+        .blockcart .body ul li .right_block {
+          overflow: hidden;
+          position: relative;
+          padding: 0 1rem 0 0; }
+          .blockcart .body ul li .right_block .product-name {
+            display: block;
+            overflow: hidden;
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #444444;
+            text-transform: capitalize;
+            font-size: 0.875rem;
+            line-height: 1.25rem; }
+          .blockcart .body ul li .right_block .product-price {
+            display: block;
+            margin: 0.375rem 0 0;
+            color: #292627; }
+          .blockcart .body ul li .right_block .remove-from-cart {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0; }
+          .blockcart .body ul li .right_block .attributes_content {
+            display: block;
+            font-size: 0.75rem;
+            color: #666;
+            margin: 5px 0 0; }
+          .blockcart .body ul li .right_block strong {
+            font-weight: 400; }
+    .blockcart .body .price_content {
+      overflow: hidden;
+      padding: 1rem 0;
+      border-bottom: 1px solid #cccccc;
+      margin-bottom: 1rem; }
+      .blockcart .body .price_content .price_inline {
+        overflow: hidden;
+        line-height: or_rem(25px); }
+        .blockcart .body .price_content .price_inline .label {
+          float: left;
+          font-weight: 500;
+          color: #444444;
+          font-size: 14px; }
+        .blockcart .body .price_content .price_inline .value {
+          float: right;
+          font-weight: 500;
+          color: #444444;
+          font-size: 14px; }
+    .blockcart .body .checkout {
+      margin-bottom: 1rem; }
+      .blockcart .body .checkout a {
+        display: block;
+        color: #cccccc; }
 
 #homecategories .categories {
   display: -ms-grid;
