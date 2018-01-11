@@ -117,10 +117,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-                margin: 0 oe_rem(6px);
+            margin: 0 oe_rem(6px);
             &:hover{
                 background: $gray-darker;
             }
+            i.material-icons{
+                color: #fff;
+            }
+            
         }
     }
 

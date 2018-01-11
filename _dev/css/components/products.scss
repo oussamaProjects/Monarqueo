@@ -97,6 +97,7 @@
 }
 .product-additional-info{
   padding: oe_rem(15px) 0;
+  @include flex(center, flex-start, row);
 }
 .product-quantity { 
   margin-top: oe_rem(-15px);

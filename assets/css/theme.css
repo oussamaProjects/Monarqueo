@@ -9489,6 +9489,8 @@ body#checkout {
       margin: 0 0.375rem; }
       #products .product-links .product-link:hover, .featured-products .product-links .product-link:hover, .product-accessories .product-links .product-link:hover, .product-miniature .product-links .product-link:hover {
         background: #292627; }
+      #products .product-links .product-link i.material-icons, .featured-products .product-links .product-link i.material-icons, .product-accessories .product-links .product-link i.material-icons, .product-miniature .product-links .product-link i.material-icons {
+        color: #fff; }
   #products .variant-links, .featured-products .variant-links, .product-accessories .variant-links, .product-miniature .variant-links {
     position: relative;
     text-align: center;
@@ -10219,7 +10221,25 @@ body#checkout {
     line-height: inherit; }
 
 .product-additional-info {
-  padding: 0.9375rem 0; }
+  padding: 0.9375rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row; }
 
 .product-quantity {
   margin-top: -0.9375rem; }

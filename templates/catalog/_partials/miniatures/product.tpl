@@ -91,9 +91,12 @@
           <a class="quick-view product-link" href="#" data-link-action="quickview">
             <i class="material-icons cart">&#xE8CC;</i>
           </a>
-          <a class="product-link" href="#">
+          {* <a class="product-link" href="#">
             <i class="material-icons favorite">&#xE87E;</i>
-          </a>
+          </a> *}
+
+          {hook h='DisplayProductWSExtra' product=$product}
+          
         {/block}
       </div> 
 
