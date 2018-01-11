@@ -536,6 +536,13 @@
     @include flex(center, center, row);
     img{
       width: auto;
+      opacity: .7;
+      @include transition();
+    }
+    &:hover{
+      img{ 
+        opacity: 1; 
+      }
     }
   }
 }
@@ -549,13 +556,10 @@
   }
 }
 
-.custom-carousel{ 
-  .owl-nav{
-    @include position(absolute, 50%, 0, initial, 0);
+.custom-carousel{  
+  .owl-nav{   
     @include flex(center, space-between, row);
-    height: oe_rem(40px);
     margin: 0;
-    margin-top: oe_rem(-20px);
     [class*=owl-]{
       background-color: transparent;
       color: $gray-darker;
@@ -564,10 +568,18 @@
       width: oe_rem(40px);
       height: oe_rem(40px);
       line-height: oe_rem(40px);
+      margin-top: oe_rem(-20px);
       &:hover{
         background-color: transparent;
         color: $gray-light;
       }
     }
+    .owl-next{
+      @include position(absolute, 50%, 0, initial, initial);
+    }
+    .owl-prev{
+      @include position(absolute, 50%, initial, initial, 0);
+    }
   }
+
 }

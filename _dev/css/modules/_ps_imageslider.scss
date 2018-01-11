@@ -119,7 +119,12 @@
   }
 
   @include media("<md"){ 
-      li { 
+    height: auto;
+    overflow: hidden;
+    .carousel-inner {
+      height: auto;
+      .carousel-item{
+        height: auto;
         .caption {
           left: 0%;
           width: 100%;
@@ -147,7 +152,7 @@
           font-size: oe_rem(12px);
           padding: oe_rem(6px) oe_rem(10px);  
         }
-
       }
     }
+  }
 }

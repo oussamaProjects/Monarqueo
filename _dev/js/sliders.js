@@ -31,7 +31,7 @@ $(document).ready(function () {
 		autoplayTimeout:1000,
 		autoplayHoverPause:true,		
 		loop:true,
-		margin: 30,
+		margin: 0,
 		dots: false,
 		nav:true,	 
 		navText: ['<i class="fa fa-long-arrow-left" aria-hidden="true"></i>','<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'],

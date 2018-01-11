@@ -474,6 +474,8 @@ input, textarea {
 
 
 .btn{ 
+    z-index: 1;
+    position: relative;
     font-size: $base-font-size;
     text-transform: uppercase;
     cursor: pointer; 

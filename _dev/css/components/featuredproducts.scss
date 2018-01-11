@@ -27,6 +27,7 @@
         margin: 0 auto 1.563rem;
         height: oe_rem(430px);
         width: 257px;
+        max-width: 100%;
         background: white;
         @include oe_box-shadow;
         &:hover, &:focus {
@@ -144,7 +145,8 @@
         bottom: 1.25rem; 
         z-index: 0; 
         text-align: center;
-        width: 257px; 
+        width: 257px;
+        max-width: 100%; 
         transition: all .3s; 
         opacity: 0;
     }
@@ -154,6 +156,7 @@
         z-index: 1;
         background: white;
         width: 257px;
+        max-width: 100%;
         bottom: 0;
         height: oe_rem(90px);
     }
@@ -170,7 +173,7 @@
     }
 
     .product-miniature {
-        margin: 0 0.625rem;
+        margin: oe_rem(5px) oe_rem(10px);
         .discount { 
             left: 0rem; 
             background: $brand-danger;  

@@ -12,7 +12,25 @@
 			background-color: $gray-darker;
 			height: oe_rem(320px);
 			@include flex(center, center, column);
-			
+			&:after,
+			&:before{
+				content: "";
+				width: 0;
+				height: 0;
+				z-index: 0;
+				margin: auto;
+				opacity: 0.03; 
+				background-color: $gray-darker;
+				@include transition(); 
+				@include position(absolute,0 ,initial ,0 ,initial);;
+			}
+			&:hover{
+				&:after,
+				&:before{ 
+					width: 100%;
+    				height: 100%;
+				}
+			}
 			&:nth-child(1){  
 				grid-column: 1/8; 
   				/* autoprefixer: off */
