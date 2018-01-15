@@ -103,6 +103,8 @@ global_settings:
       displayRightColumn:
         - likeboxfree
         - prestablog 
+      displayProductWSExtra:
+        - advansedwishlist
 
   image_types:
     cart_default:

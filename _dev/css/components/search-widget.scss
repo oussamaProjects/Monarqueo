@@ -1,15 +1,13 @@
 .search-widget { 
-  width: oe_rem(400px);
+  width: oe_rem(320px);
   padding: 0 oe_rem(15px);
   margin: 0;
   max-width: 100%;
   @include search-box;
   @include media("<xl"){
-    width: auto;
     display: none
   }
   @include media("<lg"){
-    width: auto;
     display: block;
   }
  

@@ -8001,9 +8001,9 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
   background-color: transparent;
   border-color: #fff; }
   .btn-white:hover {
-    color: #292627;
-    background-color: #cccccc;
-    border-color: #cccccc; }
+    color: #292627 !important;
+    background-color: #cccccc !important;
+    border-color: #cccccc !important; }
   .btn-white:focus, .btn-white.focus {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
     color: #292627;
@@ -8028,9 +8028,9 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
   border-color: #292627; }
   .btn-black:hover,
   .btn-primary:hover {
-    color: #fff;
-    background-color: #292627;
-    border-color: #292627; }
+    color: #fff !important;
+    background-color: #292627 !important;
+    border-color: #292627 !important; }
   .btn-black:focus, .btn-black.focus,
   .btn-primary:focus,
   .btn-primary.focus {
@@ -8063,9 +8063,9 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
   background-color: #cccccc;
   border-color: #cccccc; }
   .btn-voucher:hover {
-    color: #fff;
-    background-color: #292627;
-    border-color: #292627; }
+    color: #fff !important;
+    background-color: #292627 !important;
+    border-color: #292627 !important; }
   .btn-voucher:focus, .btn-voucher.focus {
     box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
     color: #fff;
@@ -8091,9 +8091,9 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
   padding: 0.75rem 1.5625rem;
   min-width: 15rem; }
   .btn-supplier:hover {
-    color: #cccccc;
-    background-color: #292627;
-    border-color: #cccccc; }
+    color: #cccccc !important;
+    background-color: #292627 !important;
+    border-color: #cccccc !important; }
   .btn-supplier:focus, .btn-supplier.focus {
     box-shadow: 0 0 0 2px rgba(41, 38, 39, 0.5);
     color: #cccccc;
@@ -8202,7 +8202,6 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
 
 .navbar-toggler {
   height: 2em;
-  line-height: 2em;
   text-align: center; }
 
 #page_banner {
@@ -8366,7 +8365,7 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
   color: #9d9d9d; }
 
 .search-widget {
-  width: 25rem;
+  width: 20rem;
   padding: 0 0.9375rem;
   margin: 0;
   max-width: 100%; }
@@ -8395,11 +8394,9 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
         color: #9d9d9d; }
   @media (max-width: 1199px) {
     .search-widget {
-      width: auto;
       display: none; } }
   @media (max-width: 991px) {
     .search-widget {
-      width: auto;
       display: block; } }
 
 .header-top .search-widget form input[type="text"] {
@@ -9615,7 +9612,7 @@ body#checkout {
 .block-category {
   width: 100%;
   height: auto;
-  min-height: 4.375rem;
+  min-height: 6.875rem;
   background-color: #292627;
   margin: 1.5625rem 0 3.125rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -9888,7 +9885,12 @@ body#checkout {
       #search_filters_brands .facets_container .facet,
       #search_filters_suppliers .facets_container .facet {
         width: 100%;
-        margin: 0; } }
+        margin: 0; }
+        #search_filters .facets_container .facet .facet-dropdown,
+        #search_filters_brands .facets_container .facet .facet-dropdown,
+        #search_filters_suppliers .facets_container .facet .facet-dropdown {
+          box-shadow: none;
+          border-bottom: 1px solid #f5f5f5; } }
 
 @media (max-width: 767px) {
   #search_filters_wrapper {
@@ -9930,7 +9932,8 @@ body#checkout {
       bottom: initial;
       left: initial;
       color: white;
-      opacity: 1; } }
+      opacity: 1;
+      cursor: pointer; } }
 
 #search_filters_brands .facet,
 #search_filters_suppliers .facet {
@@ -10041,7 +10044,8 @@ body#checkout {
     .block-categories .category-sub-menu li {
       position: relative; }
       .block-categories .category-sub-menu li[data-depth="0"] {
-        border-top: 1px solid #cccccc; }
+        border-top: 1px solid #cccccc;
+        padding: 0.75rem 0; }
         .block-categories .category-sub-menu li[data-depth="0"] > a {
           font-family: 'lemon-milk';
           text-transform: uppercase;
@@ -10050,8 +10054,7 @@ body#checkout {
           display: inline-block;
           margin: 0.3125rem 0 0;
           padding-bottom: 0.1875rem;
-          height: 3.125rem;
-          line-height: 2.75rem; }
+          line-height: initial; }
         .block-categories .category-sub-menu li[data-depth="0"] .collapse-icons {
           top: 1rem; }
         .block-categories .category-sub-menu li[data-depth="0"] .category-sub-menu {
@@ -10188,7 +10191,8 @@ body#checkout {
   .block-category {
     height: auto;
     margin-top: 0;
-    margin-bottom: 1.25rem; }
+    margin-bottom: 1.25rem;
+    min-height: 4.375rem; }
     .block-category img {
       max-width: 100%; }
     .block-category .block-category-wrapper {
@@ -12170,9 +12174,9 @@ textarea.form-control {
           background-color: transparent;
           border-color: #292627; }
           #homecategories .categories .categorie:nth-child(4) .info .btn-white:hover {
-            color: #cccccc;
-            background-color: #292627;
-            border-color: #cccccc; }
+            color: #cccccc !important;
+            background-color: #292627 !important;
+            border-color: #cccccc !important; }
           #homecategories .categories .categorie:nth-child(4) .info .btn-white:focus, #homecategories .categories .categorie:nth-child(4) .info .btn-white.focus {
             box-shadow: 0 0 0 2px rgba(41, 38, 39, 0.5);
             color: #cccccc;
@@ -12960,7 +12964,7 @@ textarea.form-control {
   #newsletter.email_subscription .form {
     width: 100%;
     max-width: 100%;
-    height: 3.625rem;
+    height: 3.6875rem;
     position: relative;
     margin: 1.25rem auto 0;
     border: 0.0625rem solid #cccccc; }
@@ -12997,8 +13001,7 @@ textarea.form-control {
 /*** HEADER ***/
 #header {
   background: white;
-  color: #9d9d9d;
-  height: 8.125rem; }
+  color: #9d9d9d; }
   #header .logo {
     max-width: 100%;
     height: 6.25rem; }
@@ -13280,7 +13283,7 @@ textarea.form-control {
     #header .header-nav {
       height: auto;
       background: white;
-      margin: 0.625rem 0;
+      margin: 0.625rem 0 2rem;
       color: #292627;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -13312,6 +13315,9 @@ textarea.form-control {
         bottom: initial;
         left: 0;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+        #header .header-nav.fixed .right-nav #_desktop_contact_link #contact-link {
+          padding: 0;
+          height: 0; }
       #header .header-nav .top-logo {
         line-height: 50px;
         vertical-align: middle;

@@ -58,10 +58,10 @@ function setupCustomerScripts() {
       e.preventDefault(); 
     });
     user_info.on('mouseenter', function(){
-      $(".user-info-box").stop().slideDown('300');
+      $(".user-info-box").stop().slideDown( );
     });
     user_info.on('mouseleave', function(){
-      $(".user-info-box").stop().slideUp('300');
+      $(".user-info-box").stop().slideUp( );
     });
   }
 

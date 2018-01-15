@@ -45,7 +45,7 @@
 #header {
   background: white;
   color: $gray;
-  height: oe_rem(130px);
+  // height: oe_rem(130px);
   .logo {
     max-width: 100%;
     height: oe_rem(100px);
@@ -301,7 +301,7 @@
     .header-nav {
       height: auto;
       background: white;
-      margin: oe_rem(10px) 0;
+      margin: oe_rem(10px) 0 oe_rem(32px);
       color: $gray-darker;  
       @include flex(stretch, flex-start, column);
       padding: 0 oe_rem(10px); 
@@ -312,6 +312,14 @@
         padding: oe_rem(10px);
         @include position(fixed, 0, 0, initial, 0);
         @include oe_box-shadow;
+        .right-nav { 
+          #_desktop_contact_link{ 
+            #contact-link{ 
+              padding: 0;
+              height: 0; 
+            }
+          }
+        }
       }
       .top-logo {
         line-height: 50px;

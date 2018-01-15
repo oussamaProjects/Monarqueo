@@ -291,9 +291,9 @@
 
   // Hover and focus styles are shared
   @include hover {
-    color: $active-color;
-    background-color: $active-background;
-    border-color: $active-border;
+    color: $active-color !important;
+    background-color: $active-background !important;
+    border-color: $active-border !important;
   }
   &:focus,
   &.focus {
