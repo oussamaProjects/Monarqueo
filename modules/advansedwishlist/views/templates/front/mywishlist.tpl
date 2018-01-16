@@ -54,7 +54,7 @@
     <h1 class="page-heading">{l s='My wishlists' mod='advansedwishlist'}</h1>
 {/if}
     {if $id_customer|intval neq 0}
-    {if !$single_mode}
+        {if !$single_mode}
         <form method="post" class="std box" id="form_wishlist">
             <fieldset>
                 <h3 class="page-subheading">{l s='New wishlist' mod='advansedwishlist'}</h3>
@@ -161,15 +161,17 @@
         {/if}
     {/if}
     <ul class="footer_links clearfix">
+        <br>
         <li>
-            <a class="btn btn-default button button-small" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">
+            <a class="btn btn-black button button-small" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">
                 <span>
                     <i class="icon-chevron-left"></i>{l s='Back to Your Account' mod='advansedwishlist'}
                 </span>
             </a>
         </li>
+        <br>
         <li>
-            <a class="btn btn-default button button-small" href="{$base_dir|escape:'html':'UTF-8'}">
+            <a class="btn btn-black button button-small" href="{$base_dir|escape:'html':'UTF-8'}">
                 <span>
                     <i class="icon-chevron-left"></i>{l s='Home' mod='advansedwishlist'}
                 </span>

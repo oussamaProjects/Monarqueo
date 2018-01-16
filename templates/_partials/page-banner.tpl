@@ -6,6 +6,8 @@
 and $page.page_name != 'cart' 
 and $page.page_name != 'product' 
 and $page.page_name != 'category' 
+and $page.page_name != 'manufacturer' 
+
 }
   <div class="col-md-12">
     <div id="page_banner">
@@ -26,10 +28,10 @@ and $page.page_name != 'category'
                   <div class="titre contact">
                      {l s='Contact' d='Shop.Theme.Catalog'}
                   </div> 
-               {else}
+               {* {else}
                   <div class="titre cms">
                      {block name='page_title'} {/block}
-                  </div>
+                  </div> *}
                {/if} 
 
             {/block}

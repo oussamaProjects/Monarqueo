@@ -31,7 +31,7 @@
 							<div class="title">
 								{$cat.name|escape:'html':'UTF-8'} 
 							</div>
-							<div class="court_description">Lorem ipsum dolar</div>
+							{* <div class="court_description">Lorem ipsum dolar</div> *}
 							<div class="description">
 								{$cat.description nofilter}  
 							</div>

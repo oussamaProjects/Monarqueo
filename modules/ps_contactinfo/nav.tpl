@@ -37,7 +37,8 @@
       }
     {/if}
     {if $contact_infos.email}
-        {* [1][/1] is for a HTML tag. *}
+      {* [1][/1] is for a HTML tag. *}
+      <a href="mailto:{$contact_infos.email}">
         {l
           s='[1]%email%[/1]'
           sprintf=[
@@ -47,6 +48,7 @@
           ]
           d='Shop.Theme.Global'
         }
+      </a>
     {/if}
 
     {if !$contact_infos.phone || !$contact_infos.email}

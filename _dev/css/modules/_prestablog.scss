@@ -4,7 +4,9 @@
 }
 #blog_list{
       padding-right: oe_rem(15px);
-      a{color: $gray-light !important;}
+      .date_blog-cat{
+            a{color: $gray-light !important;}
+      }
       .block_cont{
             margin-bottom: oe_rem(40px);
             border: none !important;
@@ -55,7 +57,7 @@
             }
       }
 }
-
+.prestablog_cat_img {padding: 0 !important;}
 #blog_detail{
       padding-right: oe_rem(15px);
       .header_blog{

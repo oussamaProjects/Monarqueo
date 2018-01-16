@@ -172,11 +172,7 @@
       color: $gray;
       font-size: $base-font-size;
       padding: 0 oe_rem(4px);
-    }
-
-    .sprt{
-      display: none;
-    }
+    } 
   }
 }
 
@@ -241,9 +237,11 @@
       @include flex(center, center, column); 
       height: auto;  
       padding: oe_rem(10px) 0;    
-      line-height: oe_rem(25px);
+      line-height: oe_rem(25px); 
+      .sprt{
+        display: none;
+      } 
     }
-
   }
   
 }
@@ -251,4 +249,14 @@
   .block-contact {
     padding-left: 1.5rem;
   }
+
+  .footer-container {  
+  
+    .footer-bas{   
+      .sprt{
+        display: none;
+      }
+    }
+  }
+  
 }

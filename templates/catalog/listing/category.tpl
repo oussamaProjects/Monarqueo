@@ -28,9 +28,9 @@
  
     <div class="col-md-12">
       <div class="block-category">
-        {if $category.image.large.url} 
-          <img src="{$category.image.large.url}" alt="{$category.image.legend}">  
-        {/if}
+        {if $category.image.bySize.category_default.url} 
+          <img src="{$category.image.bySize.category_default.url}" alt="{$category.image.legend}">  
+        {/if} 
         <div class="block-category-wrapper">
 
           <h1 class="titre">{$category.name}</h1>  

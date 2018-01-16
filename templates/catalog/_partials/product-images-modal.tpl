@@ -29,11 +29,13 @@
         {assign var=imagesCount value=$product.images|count}
         <figure>
           <img class="js-modal-product-cover product-cover-modal" width="{$product.cover.large.width}" src="{$product.cover.large.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" itemprop="image">
-          <figcaption class="image-caption">
-          {block name='product_description_short'}
-            <div id="product-description-short" itemprop="description">{$product.description_short nofilter}</div>
-          {/block}
-        </figcaption>
+          {if $product.description_short}          
+            <figcaption class="image-caption">
+              {block name='product_description_short'}
+                <div id="product-description-short" itemprop="description">{$product.description_short nofilter}</div>
+              {/block}
+            </figcaption>
+          {/if}        
         </figure>
         <aside id="thumbnails" class="thumbnails js-thumbnails text-sm-center">
           {block name='product_images'}

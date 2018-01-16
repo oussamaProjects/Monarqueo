@@ -59,6 +59,11 @@
 							border-color: $gray-darker;  
 						} 
 					} 
+					.description {
+						p{
+							color: $gray-darker;
+						}
+					}
 					.btn-white{
 						@include my-button-variant($gray-darker, $gray-light, transparent, $gray-darker, $gray-darker, $gray-light);
 				  }
@@ -90,8 +95,9 @@
 				text-align: center;
 				padding: oe_rem(20px) oe_rem(25px);
 				.title{
-					font-size: oe_rem(24px);
 					position: relative;
+					font-size: oe_rem(24px);
+					margin-bottom: oe_rem(20px);
 					&:before,
 					&:after{
 						content: "";
@@ -112,6 +118,11 @@
 					padding: oe_rem(20px) 0;
 				}
 				.description{
+					b,strong{
+						font-size: 22px;
+						font-family: "lemon-milk";
+						padding: oe_rem(20px) 0;
+					}
 					p{
 						font-size: oe_rem(18px); 
 						color: $white;
@@ -182,6 +193,10 @@
 						padding: oe_rem(10px) 0;
 					}
 					.description{
+						b,strong{
+							font-size: 18px; 
+							padding: oe_rem(10px) 0;
+						}
 						p{
 							font-size: oe_rem(14px); 
 							color: $white;

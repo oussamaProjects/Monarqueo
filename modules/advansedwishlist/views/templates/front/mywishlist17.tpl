@@ -27,6 +27,6 @@
 
 {block name="page_content"}
 
-    {include file="modules/advansedwishlist/views/templates/front/mywishlist.tpl"}
+    {include file="themes/Monarqueo/modules/advansedwishlist/views/templates/front/mywishlist.tpl"}
 
 {/block}

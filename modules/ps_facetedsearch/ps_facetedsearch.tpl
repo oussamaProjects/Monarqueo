@@ -25,7 +25,9 @@
 {if isset($listing.rendered_facets)}
 <div id="open_search_filters_wrapper" class="hidden-md-up"> 
     <button class="btn btn-black ok"> 
+    {if isset($category)} 
     {$category.name} 
+    {/if}
     <i class="material-icons">&#xE5C5;</i>
     </button>
 </div>

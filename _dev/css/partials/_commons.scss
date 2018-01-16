@@ -635,3 +635,8 @@ input, textarea {
     height: 2em;
     text-align: center;
 }
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}

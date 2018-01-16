@@ -83,7 +83,17 @@
     .right-nav {
       display: flex;
       flex-wrap: nowrap;
-      justify-content: flex-end;
+      justify-content: flex-end; 
+      #_desktop_contact_link{ 
+        #contact-link{ 
+          a{
+            color: $gray;
+            &:hover{
+              color: $gray-light;
+            }
+          }
+        }
+      }
     }
     .currency-selector {
       margin-top: 0.9375rem;
@@ -348,6 +358,13 @@
             span{
               padding: 0 oe_rem(10px);
             }
+
+            a{
+              color: white;
+              &:hover{
+                color: $gray-light;
+              }
+            }
           }
         }
       }
@@ -572,7 +589,7 @@
       margin: 0;
       width: oe_rem(40px);
       height: oe_rem(40px);
-      line-height: oe_rem(40px);
+      line-height: oe_rem(45px);
       margin-top: oe_rem(-20px);
       &:hover{
         background-color: transparent;

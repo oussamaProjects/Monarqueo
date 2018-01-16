@@ -26,9 +26,31 @@
               <div {if $depth === 0} class="popover sub-menu js-sub-menu collapse"{else} class="collapse"{/if} id="top_sub_menu_{$_expand_id}">
                 {menu nodes=$node.children depth=$node.depth parent=$node}
               </div>
+              
               {/if}
             </li>
+             
         {/foreach}
+
+        {if $depth === 1}
+          <li class="category"  id="categoryMarque">
+            <a class="dropdown-item dropdown-submenu" href="#" data-depth="1"> 
+              Marque
+            </a>
+            <div class="collapse" id="">
+              <ul class="top-menu " data-depth="2">
+                {foreach from=$manufacturers item=manufacturer name=manufacturer_list}
+                  <li class="category">
+                    <a class="dropdown-item" href="{$link->getmanufacturerLink($manufacturer.id_manufacturer, $manufacturer.link_rewrite)}" data-depth="2">
+                      {$manufacturer.name|truncate:60:'...'|escape:'htmlall':'UTF-8'}
+                    </a>
+                  </li>
+                {/foreach}
+              </ul>
+            </div>
+          </li>
+        {/if}
+
       </ul>
     {/if}
 {/function}
