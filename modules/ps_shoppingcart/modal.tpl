@@ -71,8 +71,8 @@
 						<div class="cart-content">
 							<div class="cart-content-btn">
 								<button type="button" class="btn btn-black" data-dismiss="modal">
+									<i class="fa fa-angle-left" aria-hidden="true"></i>
 									{l s='Continue shopping' d='Shop.Theme.Actions'}
-									<i class="fa fa-angle-right" aria-hidden="true"></i>
 								</button>
 								<a href="{$cart_url}" class="btn btn-black">
 									{l s='valider mon panier' d='Shop.Theme.Actions'}

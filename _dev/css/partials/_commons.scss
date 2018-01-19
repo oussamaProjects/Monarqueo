@@ -640,3 +640,12 @@ input, textarea {
     pointer-events: none;
     cursor: default;
 }
+
+.mobile{
+    position: relative;
+    #_mobile_user_info{
+        position: absolute;
+        right: oe_rem(10px);
+        top: oe_rem(25px);
+    }
+}

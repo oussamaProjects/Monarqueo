@@ -71,7 +71,7 @@
             {/block}
             
             {block name="left_column"}
-              <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
+              <div id="left-column" class="col-xs-12 col-sm-4 col-lg-3 col-md-12">
                 <div class="left-column-content">
                   {if $page.page_name == 'product'}
                     {hook h='displayLeftColumnProduct'}
@@ -83,7 +83,7 @@
             {/block}
 
             {block name="content_wrapper"}
-              <div id="content-wrapper" class="left-column right-column col-sm-4 col-md-5">
+              <div id="content-wrapper" class="left-column right-column col-sm-4 col-lg-5 col-md-12">
                 {hook h="displayContentWrapperTop"}
                 {block name="content"}
                   <p>Hello world! This is HTML5 Boilerplate.</p>
@@ -93,7 +93,7 @@
             {/block}
 
             {block name="right_column"}
-              <div id="right-column" class="col-xs-12 col-sm-4 col-md-4">
+              <div id="right-column" class="col-xs-12 col-sm-4 col-md-12 col-lg-4">
                 <div class="right-column-content">
                   {if $page.page_name == 'product'}
                     {hook h='displayRightColumnProduct'}

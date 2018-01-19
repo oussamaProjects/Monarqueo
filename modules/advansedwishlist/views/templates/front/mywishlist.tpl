@@ -165,7 +165,7 @@
         <li>
             <a class="btn btn-black button button-small" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">
                 <span>
-                    <i class="icon-chevron-left"></i>{l s='Back to Your Account' mod='advansedwishlist'}
+					<i class="fa fa-angle-left" aria-hidden="true"></i>{l s='Back to Your Account' mod='advansedwishlist'}
                 </span>
             </a>
         </li>
@@ -173,7 +173,7 @@
         <li>
             <a class="btn btn-black button button-small" href="{$base_dir|escape:'html':'UTF-8'}">
                 <span>
-                    <i class="icon-chevron-left"></i>{l s='Home' mod='advansedwishlist'}
+					<i class="fa fa-angle-left" aria-hidden="true"></i>{l s='Home' mod='advansedwishlist'}
                 </span>
             </a>
         </li>

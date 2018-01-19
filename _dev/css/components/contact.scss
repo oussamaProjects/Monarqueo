@@ -88,6 +88,18 @@
 		height: oe_rem(320px);
 		width: 100%;
 	}
+
+	@include media("<md"){
+		.login-form{
+			padding-bottom: oe_rem(30px);
+			.contact_titre{
+				font-size: oe_rem(16px); 
+				line-height: oe_rem(20px);
+				padding-bottom: oe_rem(20px); 
+			}
+		}
+	}
+
 }
 
 .form-control{

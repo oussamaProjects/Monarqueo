@@ -27,7 +27,7 @@
 {if $advansedwishlistis17 == 0}
 <li>
 {/if}
-<a {if $advansedwishlistis17 == 1}class="col-lg-4 col-md-6 col-sm-6"{/if} href="
+<a {if $advansedwishlistis17 == 1}class="col-lg-4 col-md-6 col-sm-6 col-xs-12"{/if} href="
 {url entity='module' name='advansedwishlist' controller='mywishlist'}" title="{l s='My wishlists' mod='advansedwishlist'}">
     {if $advansedwishlistis17 == 1}<span class="link-item">{/if}
     

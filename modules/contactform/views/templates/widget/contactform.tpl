@@ -117,16 +117,17 @@
 
 <div id="block-reassurance" class="block-reassurance block-reassurance-contact">  
 
-  <div class="block-reassurance-item col-md-3">
+  <div class="block-reassurance-item col-md-4">
     <i class="fa fa-map-marker" aria-hidden="true"></i>
     <div class="title">{l s='Adresse' d='Shop.Theme.Global'} </div>
-    <div class="description"> 
-      {l s='15, Quartier lorem ipsum' d='Shop.Theme.Global'} <br>
-      {l s='90000 - Tanger' d='Shop.Theme.Global'}
+    <div class="description">  
+      <span>{$shop.address.address1}</span> <br>
+      <span>{$shop.address.address2}</span> <br>
+      <span>{$shop.address.city}</span>  
     </div>
   </div> 
 
-  <div class="block-reassurance-item col-md-3">
+  <div class="block-reassurance-item col-md-4">
     <i class="fa fa-phone" aria-hidden="true"></i>
     <div class="title">{l s='Téléphone' d='Shop.Theme.Global'} </div>
     <div class="description"> 
@@ -134,15 +135,15 @@
     </div>
   </div> 
 
-  <div class="block-reassurance-item col-md-3">
+  {* <div class="block-reassurance-item col-md-4">
     <i class="fa fa-fax" aria-hidden="true"></i>
     <div class="title">{l s='Fax' d='Shop.Theme.Global'} </div>
     <div class="description">  
       <span>{$shop.fax}</span> 
     </div>
-  </div> 
+  </div>  *}
 
-  <div class="block-reassurance-item col-md-3">
+  <div class="block-reassurance-item col-md-4">
     <i class="fa fa-envelope" aria-hidden="true"></i>
     <div class="title">{l s='E-mail' d='Shop.Theme.Global'} </div>
     <div class="description">{$shop.email}</div>
@@ -153,5 +154,5 @@
 </div>
 
 <div class="col-md-12"> 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9084.684579714143!2d-3.622976373540657!3d40.549325498802396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422d03467332fd%3A0x65e5bc952a04c126!2sAv.+Matapi%C3%B1onera%2C+11%2C+28703+San+Sebasti%C3%A1n+de+los+Reyes%2C+Madrid%2C+Espagne!5e0!3m2!1sfr!2sfr!4v1505135387623" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.1851779268424!2d-5.843881170759447!3d35.781745086732144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQ2JzU0LjMiTiA1wrA1MCczNi4wIlc!5e0!3m2!1sfr!2s!4v1516188011482" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div> 

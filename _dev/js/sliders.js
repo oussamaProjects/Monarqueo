@@ -3,9 +3,9 @@ import $ from 'jquery';
 $(document).ready(function () {
 
 	$('#manufacturers_slider').owlCarousel({
-		autoPlay:true,
+		autoplay:true,
 		slideSpeed : 2000,
-		autoplayTimeout:1000,
+		autoplayTimeout:1500,
 		autoplayHoverPause:true,		
 		loop:true,
 		margin:0,

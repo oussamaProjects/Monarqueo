@@ -251,11 +251,11 @@
     }
   }
   @include media("<lg"){
-    padding-top: oe_rem(60px);
+    padding-top: oe_rem(20px);
   }
 
   @include media("<md"){
-    padding-top: oe_rem(30px);
+    padding-top: oe_rem(15px);
   }
 }
 
@@ -287,7 +287,7 @@
   &.notification-success{
     color: $brand-success !important;
   }
-  &.notification-success{
+  &.notification-error{
     color: $brand-danger !important;
   }
 }
@@ -376,9 +376,9 @@
           color: $gray;
         }
         span{
-         font-size: oe_rem(14px);
+         font-size: 16px;
          &.icon-user-unfollow{
-          font-size: oe_rem(16px);
+          font-size: 16px;
          }
         }
       }
@@ -448,6 +448,19 @@
   #footer {
     padding-top: 0.5rem;
   }
+
+  #blockcart-modal{
+    .modal-header { 
+      margin: 0; 
+    }  
+    .cart-content {  
+      .cart-content-btn {
+        @include flex(center, center, column);
+        padding-top: oe_rem(20px); 
+      }
+    } 
+  }
+
 }
 
 @include media-breakpoint-down(md) {
@@ -479,17 +492,7 @@
     margin-top: $small-space;
     margin-left: 0;
   }
-  #blockcart-modal{
-    .modal-header { 
-      margin: 0; 
-    }  
-    .cart-content {  
-      .cart-content-btn {
-        @include flex(center, center, column);
-        padding-top: oe_rem(20px); 
-      }
-    } 
-  }
+  
   #search_filters .facet .facet-label {
     text-align: left;
   }
@@ -502,11 +505,7 @@
   }
 }
 
-@include media-breakpoint-down(xs) {
-  #left-column, #content-wrapper {
-    // padding-left: 0 !important;
-    // padding-right: 0 !important;
-  }
+@include media-breakpoint-down(xs) { 
   #_mobile_my_contact_link{
     display: none;
   }
@@ -520,10 +519,6 @@
       #_desktop_top_menu{
         @include position(absolute, oe_rem(80px), 0, initial, 0);
         text-align: center;
-      }
-      #_desktop_logo{ 
-        img{ 
-        }
       } 
     } 
   }
@@ -553,17 +548,19 @@
   margin-bottom: oe_rem(40px);
 
   .manufacturer{
-    height: oe_rem(40px);
-    text-align: center;
-    @include flex(center, center, row);
-    img{
-      width: auto;
-      opacity: .7;
-      @include transition();
-    }
-    &:hover{
-      img{ 
-        opacity: 1; 
+    a{
+      height: oe_rem(40px);
+      text-align: center;
+      @include flex(center, center, row);
+      img{
+        width: auto;
+        opacity: .7;
+        @include transition();
+      }
+      &:hover{
+        img{ 
+          opacity: 1; 
+        }
       }
     }
   }
@@ -605,3 +602,4 @@
   }
 
 }
+

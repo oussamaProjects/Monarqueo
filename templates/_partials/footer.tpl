@@ -32,8 +32,9 @@
             <div id="manufacturers_slider" class="custom-carousel owl-carousel owl-theme owl-loaded">
               {foreach from=$manufacturers item=manufacturer name=manufacturer_list}
                 <div class="manufacturer">
-                  {* <a href="{$link->getmanufacturerLink($manufacturer.id_manufacturer, $manufacturer.link_rewrite)}" title="{l s='More about' mod='blockmanufacturer'} {$manufacturer.name}">{$manufacturer.name|escape:'htmlall':'UTF-8'} *}
-                  <img src="{$urls.img_manu_url}{$manufacturer.id_manufacturer}.jpg" alt="{$manufacturer.name|truncate:60:'...'|escape:'htmlall':'UTF-8'}" />
+                  <a href="{$link->getmanufacturerLink($manufacturer.id_manufacturer, $manufacturer.link_rewrite)}" title="{l s='More about' mod='blockmanufacturer'} {$manufacturer.name}">
+                    <img src="{$urls.img_manu_url}{$manufacturer.id_manufacturer}.jpg" alt="{$manufacturer.name|truncate:60:'...'|escape:'htmlall':'UTF-8'}" />
+                  </a>
               </div>
               {/foreach}
             </div>
@@ -73,7 +74,7 @@
         {l s='Mentions légales' d='Shop.Theme.Global'}
       </a>
       <span class="sprt"> - </span>
-      <a class="_blank" href="https://comenscene.com/" target="_blank">
+      <a class="_blank" href="https://comenscene.com/" target="_blank" rel="nofollow">
         {l s='Réalisation Com en Scène' d='Shop.Theme.Global'} 
       </a> 
     {/block} 

@@ -32,6 +32,7 @@
   }
   .modal-footer {
     border-top: 1px solid rgba($gray,.3);
+    @include flex(flex-start, flex-start, row);
   }
   .layer {
     display: none;

@@ -49,12 +49,16 @@
 		.image {  
 			width: 100%;
 			height: 100%;
-			img {
+			max-height: oe_rem(390px);
+			overflow: hidden;
+			img { 
 				display: block;
 				margin: 0 auto;
-				width: 100%; 
+				width: initial;
 				height: auto;
 				min-height: 100%;
+				min-width: 100%;
+				max-width: initial;
 			}
 		}
 	}
@@ -62,6 +66,10 @@
 	@include media("<lg"){
 		box-shadow: none; 
 		.bloc{
+			&:after,
+			&:before{
+				content: none;
+			}
 			@include flex(flex-start, flex-start, column-reverse);
 			.info{ 
 				width: 100%;
@@ -70,11 +78,8 @@
 					margin: oe_rem(20px) 0;
 				} 
 			} 
-			.image {  
-				height: auto;
-				img {
-					height: auto;
-				}
+			.image {   
+				display: none; 
 			}
 		}
 	}
@@ -101,10 +106,7 @@
 				} 
 			} 
 			.image {  
-				height: auto;
-				img {
-					height: auto;
-				}
+				display: none;
 			}
 		}
 	}
