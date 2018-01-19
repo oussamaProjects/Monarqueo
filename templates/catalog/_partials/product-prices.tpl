@@ -106,8 +106,8 @@
             <i class="material-icons product-available">fiber_manual_record</i>
             {l s='available' d='Shop.Theme.Catalog'}
           {elseif $product.availability == 'last_remaining_items'}
-            <i class="material-icons product-last-items">fiber_manual_record</i>
-            {l s='last_remaining_items' d='Shop.Theme.Catalog'}
+            {* <i class="material-icons product-last-items">fiber_manual_record</i>
+            {l s='last_remaining_items' d='Shop.Theme.Catalog'} *}
           {else}
             <i class="material-icons product-unavailable">fiber_manual_record</i>
             {l s='unavailable' d='Shop.Theme.Catalog'}

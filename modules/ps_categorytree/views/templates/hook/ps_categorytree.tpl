@@ -25,14 +25,17 @@
 
 {function name="categories" nodes=[] depth=0}
   {strip}
+  
+  
+  
     {if $nodes|count}
       <ul class="category-sub-menu">
         {foreach from=$nodes item=node}
           <li data-depth="{$depth}">
             {if $depth===0 or $depth===1}
-              <a href="{$node.link}">{$node.name}</a>
+              <a href="{$node.link}" class="{if $node.id == $category.id}active collapse_cat_menu{/if}">{$node.name}</a>
               {if $node.children}
-                <div class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
+                <div class="navbar-toggler collapse-icons  {$node.name} {if $node.id == $category.id}collapse_cat_menu{/if}" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
                   <i class="material-icons add">&#xE145;</i>
                   <i class="material-icons remove">&#xE15B;</i>
                 </div>
@@ -41,7 +44,7 @@
                 </div>
               {/if}
             {else}
-              <a class="category-sub-link" href="{$node.link}">{$node.name}</a>
+              <a class="category-sub-link{if $node.id == $category.id} active collapse_cat_menu{/if}" href="{$node.link}">{$node.name}</a>
               {if $node.children}
                 {* <span class="arrows" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
                   <i class="material-icons arrow-right">&#xE315;</i>
@@ -67,4 +70,10 @@
     <li>{categories nodes=$categories.children}</li>
   </ul> 
 </div>
+{* {$category|var_dump}
 
+
+<br> 
+<hr> 
+<br> 
+{$categories.children|var_dump} *}

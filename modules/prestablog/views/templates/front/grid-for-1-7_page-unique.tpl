@@ -56,22 +56,24 @@
         {if (sizeof($news->products_liaison))}
         <div id="blog_product_linked">
             <h3>{l s='Related products' mod='prestablog'}</h3>
-            {foreach from=$news->products_liaison item=product key=key name=current}
-            <a href="{$product.link|escape:'htmlall':'UTF-8'}">
-                <div class="productslinks">
-                    <div class="wrap_blog">
-                        <div>
-                            <div class="product_name_blog">
-                                <p class="titre_product_blog">
-                                    {$product.name|escape:'htmlall':'UTF-8'}
-                                </p>
+            <div class="blog_product_linked_container">
+                {foreach from=$news->products_liaison item=product key=key name=current}
+                <a href="{$product.link|escape:'htmlall':'UTF-8'}">
+                    <div class="productslinks">
+                        <div class="wrap_blog">
+                            <div>
+                                <div class="product_name_blog">
+                                    <p class="titre_product_blog">
+                                        {$product.name|escape:'htmlall':'UTF-8'}
+                                    </p>
+                                </div>
+                                {PrestaBlogContent return=$product.thumb}
                             </div>
-                            {PrestaBlogContent return=$product.thumb}
                         </div>
                     </div>
-                </div>
-            </a>
-            {/foreach}
+                </a>
+                {/foreach}
+            </div>
         </div>
         {/if}
 

@@ -41,6 +41,7 @@
           <ul>
             {foreach $notifications.messages as $notif}
               <li>{$notif}</li>
+              {break}
             {/foreach}
           </ul>
         </div>
@@ -49,15 +50,15 @@
       <section class="form-fields">
 
         <div class="form-group"> 
-          <input type="text" name="lastname" value="{$contact.lastname}" class="form-control" placeholder="{l s='Last name' d='Modules.Contactform.Shop'}" />
+          <input type="text" name="lastname" value="{$contact.lastname}" class="form-control" placeholder="{l s='Last name' d='Modules.Contactform.Shop'}" required="required" />
         </div>
 
         <div class="form-group"> 
-          <input type="text" name="firstname" value="{$contact.firstname}" class="form-control" placeholder="{l s='First name' d='Modules.Contactform.Shop'}" />
+          <input type="text" name="firstname" value="{$contact.firstname}" class="form-control" placeholder="{l s='First name' d='Modules.Contactform.Shop'}" required="required" />
         </div>
 
         <div class="form-group"> 
-          <input type="email" name="from" value="{$contact.email}" class="form-control" placeholder="{l s='Email address' d='Modules.Contactform.Shop'}" />
+          <input type="email" name="from" value="{$contact.email}" class="form-control" placeholder="{l s='Email address' d='Modules.Contactform.Shop'}" required="required" />
         </div>
 
         <div class="form-group"> 
@@ -94,7 +95,7 @@
         <div class="form-group">
           <textarea cols="67" rows="10" name="message" class="form-control" placeholder="{l s='Message' d='Modules.Contactform.Shop'}">{if $contact.message}{$contact.message}{/if}</textarea>
         </div>
-
+        
         <div class="form-group">
           <div class="g-recaptcha" data-sitekey="6Lc8Rj4UAAAAAEuMW-UoAM9xHKc8UCKVGTQ0W-Vi"></div>
         </div>

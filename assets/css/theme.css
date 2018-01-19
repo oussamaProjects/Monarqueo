@@ -10113,6 +10113,10 @@ body#checkout {
     .block-categories .category-sub-menu .category-sub-link {
       font-size: 1rem;
       display: block; }
+      .block-categories .category-sub-menu .category-sub-link.active {
+        font-weight: 600;
+        color: #000;
+        text-decoration: underline; }
     .block-categories .category-sub-menu li {
       position: relative; }
       .block-categories .category-sub-menu li[data-depth="0"] {
@@ -12848,59 +12852,6 @@ textarea.form-control {
     #blog_detail {
       padding: 0 0.9375rem; } }
 
-#blog_footer {
-  padding-bottom: 0.9375rem; }
-  #blog_footer ul.toggle-footer {
-    list-style-type: none;
-    padding: 0;
-    margin: 0; }
-    #blog_footer ul.toggle-footer li {
-      width: auto;
-      display: block;
-      height: 15.625rem;
-      background: #444444;
-      position: relative;
-      overflow: hidden;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -moz-align-items: center;
-      -ms-align-items: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -moz-justify-content: center;
-      -ms-justify-content: center;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -ms-flex-pack: center;
-      -moz-flex-direction: row;
-      -ms-flex-direction: row;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-              flex-direction: row; }
-      #blog_footer ul.toggle-footer li img {
-        width: 100%; }
-      #blog_footer ul.toggle-footer li a {
-        color: #fff;
-        position: absolute;
-        top: initial;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transition: all 0.2s ease-in-out;
-        background: rgba(0, 0, 0, 0.3);
-        padding: 0.9375rem 0.625rem 0.625rem; }
-        #blog_footer ul.toggle-footer li a .titre {
-          font-size: 1rem;
-          font-weight: 600;
-          line-height: 1rem;
-          padding-bottom: 0.25rem; }
-        #blog_footer ul.toggle-footer li a .date_blog {
-          font-size: 0.875rem; }
-        #blog_footer ul.toggle-footer li a:hover {
-          color: #444444; }
-
 #blog_article_linked .title {
   color: #444444;
   font-weight: 600;
@@ -13075,6 +13026,20 @@ textarea.form-control {
     .prestablog_pagination a:last-child:hover {
       color: #fff;
       background-color: #444444; }
+
+#blog_product_linked, .page-product-box {
+  float: none !important; }
+  #blog_product_linked .blog_product_linked_container, .page-product-box .blog_product_linked_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0.9375rem;
+    grid-row-gap: 0.9375rem; }
+    #blog_product_linked .blog_product_linked_container .productslinks, .page-product-box .blog_product_linked_container .productslinks {
+      float: none !important;
+      padding: 0;
+      margin: 0; }
 
 #newsletter {
   padding: 3.4rem 0;

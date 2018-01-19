@@ -17,31 +17,31 @@
         {/if}
       </div>
     {/if}
-    {if isset($product.reference_to_display)}
+    {* {if isset($product.reference_to_display)}
       <ul class="product-reference">
         <li>
           {l s='Reference' d='Shop.Theme.Catalog'}: 
           <span itemprop="sku">{$product.reference_to_display}</span> 
         </li>
       </ul>
-    {/if}
+    {/if} *}
   {/block}
 
   {block name='product_quantities'}
-    {if $product.show_quantities}
+    {* {if $product.show_quantities}
       <ul class="product-quantities">
         <li>
           {l s='In stock' d='Shop.Theme.Catalog'}: 
           <span data-stock="{$product.quantity}" data-allow-oosp="{$product.allow_oosp}">{$product.quantity} {$product.quantity_label}</span>
         </li>
       </ul>
-    {/if}
+    {/if} *}
   {/block}
 
   {block name='product_features'}
     {if $product.features}
-      <section class="product-features">
-        <h3 class="h6">{l s='Data sheet' d='Shop.Theme.Catalog'}</h3>
+      <section class="">
+        {* <h3 class="h6">{l s='Data sheet' d='Shop.Theme.Catalog'}</h3> *}
         <ul class="data-sheet">
           {foreach from=$product.features item=feature}
             <li class="name">{$feature.name}: <span class="value">{$feature.value}</span></li>
@@ -53,7 +53,7 @@
 
   {* if product have specific references, a table will be added to product details section *}
   {block name='product_specific_references'}
-    {if isset($product.specific_references)}
+    {* {if isset($product.specific_references)}
       <section class="product-features">
         <h3 class="h6">{l s='Specific References' d='Shop.Theme.Catalog'}</h3>
           <ul class="data-sheet">
@@ -62,11 +62,11 @@
             {/foreach}
           </ul>
       </section>
-    {/if}
+    {/if} *}
   {/block}
 
   {block name='product_condition'}
-    {if $product.condition}
+    {* {if $product.condition}
       <ul class="product-condition">
         <li>
         {l s='Condition' d='Shop.Theme.Catalog'}: 
@@ -74,6 +74,6 @@
         </li>
         <link itemprop="itemCondition" href="{$product.condition.schema_url}"/>
       </ul>
-    {/if}
+    {/if} *}
   {/block}
 </div>
