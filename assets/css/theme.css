@@ -11583,6 +11583,7 @@ li.product-flag {
     margin-bottom: 0.3125rem; }
 
 .quickview .modal-footer {
+  padding: 0;
   border-top: 1px solid rgba(157, 157, 157, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;

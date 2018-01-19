@@ -33,7 +33,7 @@
  
       <div class="row">
         <div class="col-md-6">
-          <div class="h3">{l s='Vous n’avez pas un compte ?' d='Shop.Theme.Customeraccount'}</div>
+          <div class="h3">{l s='You do not have an account ?' d='Shop.Theme.Customeraccount'}</div>
           <br class="hidden-sm-down">
           <p>{l s='Saisissez votre adresse e-mail pour créer votre compte' d='Shop.Theme.Customeraccount'}</p>
           <div class="no-account">
@@ -47,7 +47,7 @@
           <br class="hidden-md-up">
         </div>
         <div class="col-md-6">
-          <div class="h3">{l s='Vous avez un compte ?' d='Shop.Theme.Customeraccount'}</div>
+          <div class="h3">{l s='Do you have an account?' d='Shop.Theme.Customeraccount'}</div>
           <br class="hidden-sm-down">
           <section class="login-form">
             {render file='customer/_partials/login-form.tpl' ui=$login_form}

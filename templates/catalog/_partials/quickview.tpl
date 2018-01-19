@@ -73,7 +73,7 @@
       </div>
      </div>
      <div class="modal-footer">
-       {hook h='displayProductAdditionalInfo' product=$product}
+       {* {hook h='displayProductAdditionalInfo' product=$product} *}
     </div>
    </div>
  </div>

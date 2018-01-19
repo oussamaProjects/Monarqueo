@@ -17,10 +17,10 @@
 
 	<!-- Module Presta Blog -->
 	<div class="block-categories">
-		<h4 class="title_block">
+		<div class="title_block">
 			<i class="fa fa-search" aria-hidden="true"></i>
 			{l s='Search for an article' mod='prestablog'}
-		</h4>
+		</div>
 		<div class="block_content">
 			<div class="form_search">
 				<form action="{PrestaBlogUrl}" method="post" id="prestablog_bloc_search">

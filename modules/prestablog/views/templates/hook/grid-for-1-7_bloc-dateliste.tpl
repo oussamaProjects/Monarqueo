@@ -17,7 +17,7 @@
 
 <!-- Module Presta Blog -->
 <div class="block-categories">
-	<h4 class="title_block">{l s='Blog archives' mod='prestablog'}</h4>
+	<div class="title_block">{l s='Blog archives' mod='prestablog'}</div>
 	<div class="block_content" id="prestablog_dateliste">
 		{if $ResultDateListe}
 			<ul>

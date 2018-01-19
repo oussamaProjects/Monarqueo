@@ -29,7 +29,7 @@
 			<div class="checkout">
 				<a href="{$cart_url}" class="btn btn-black">
 					<i class="material-icons">&#xE8CC;</i>
-					{l s='checkout' d='Shop.Theme.Actions'}
+					{l s='Checkout' d='Shop.Theme.Actions'}
 					<i class="material-icons">&#xE315;</i>
 				</a>
 			</div>

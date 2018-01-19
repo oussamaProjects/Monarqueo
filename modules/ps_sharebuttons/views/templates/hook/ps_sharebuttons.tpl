@@ -28,7 +28,12 @@
     <div class="social-sharing">
       <div class="social-sharing-container">
         {foreach from=$social_share_links item='social_share_link'}
-          <a href="{$social_share_link.url}" title="{$social_share_link.label}" target="_blank">
+          <a 
+          href="{$social_share_link.url}" 
+          title="{$social_share_link.label}" 
+          target="popup"  
+          onclick="window.open('{$social_share_link.url}','popup','width=500,height=400'); return false;"
+          >
             <i class="fa fa-{$social_share_link.class}" aria-hidden="true"> </i>
           </a>
         {/foreach}
@@ -41,3 +46,4 @@
     </div>
   {/if}
 {/block}
+

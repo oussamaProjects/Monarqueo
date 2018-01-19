@@ -71,7 +71,7 @@ $(document).ready(() => {
 
 
   let share = $(".social-sharing");
-  share.on('click', function(){
-    $(".social-sharing .social-sharing-container").stop().slideToggle('300');
+  share.on('click', function(){ 
+    $(this).find(" .social-sharing-container").stop().slideToggle('300');
   }); 
 });
