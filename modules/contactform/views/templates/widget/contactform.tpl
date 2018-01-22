@@ -62,7 +62,7 @@
         </div>
 
         <div class="form-group"> 
-          <input type="text" name="phone" value="{$contact.phone}" class="form-control" placeholder="{l s='Phone' d='Modules.Contactform.Shop'}" />
+          <input type="text" name="phone" value="{$contact.phone}" class="form-control" placeholder="{l s='Phone' d='Modules.Contactform.Shop'}" required="required"/>
         </div>
 
         {if $contact.orders}
@@ -93,7 +93,7 @@
         </div>
 
         <div class="form-group">
-          <textarea cols="67" rows="10" name="message" class="form-control" placeholder="{l s='Message' d='Modules.Contactform.Shop'}">{if $contact.message}{$contact.message}{/if}</textarea>
+          <textarea cols="67" rows="10" name="message" class="form-control" placeholder="{l s='Message' d='Modules.Contactform.Shop'}" required="required">{if $contact.message}{$contact.message}{/if}</textarea>
         </div>
         
         <div class="form-group">

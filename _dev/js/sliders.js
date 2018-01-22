@@ -52,6 +52,7 @@ $(document).ready(function () {
 	};
 
 	$('#bestsellers-products').owlCarousel( productsSliderArg ); 
+	$('#new-products').owlCarousel( productsSliderArg ); 
 	$('#featured-products').owlCarousel( productsSliderArg ); 
 	
 });

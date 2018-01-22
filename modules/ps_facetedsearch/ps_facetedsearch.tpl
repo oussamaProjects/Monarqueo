@@ -23,26 +23,27 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if isset($listing.rendered_facets)}
-<div id="open_search_filters_wrapper" class="hidden-md-up"> 
-    <button class="btn btn-black ok"> 
-    {if isset($category)} 
-    {$category.name} 
-    {/if}
-    <i class="material-icons">&#xE5C5;</i>
-    </button>
-</div>
-<div id="search_filters_wrapper">
-  <div class="hidden-md-up close">  
-    <i class="material-icons">&#xE14C;</i>
+  {if isset($category)} 
+    <div id="open_search_filters_wrapper" class="hidden-md-up"> 
+        <button class="btn btn-black ok"> 
+        {$category.name} 
+        <i class="material-icons">&#xE5C5;</i>
+        </button>
+    </div>
+  {/if}
+
+  <div id="search_filters_wrapper">
+    <div class="hidden-md-up close">  
+      <i class="material-icons">&#xE14C;</i>
+    </div>
+    {* <div id="search_filter_controls" class="hidden-md-up">
+        <span id="_mobile_search_filters_clear_all"></span>
+        <button class="btn btn-black ok">
+          <i class="material-icons">&#xE876;</i>
+          {l s='OK' d='Shop.Theme.Actions'}
+        </button>
+    </div> *}
+    
+    {$listing.rendered_facets nofilter}
   </div>
-  {* <div id="search_filter_controls" class="hidden-md-up">
-      <span id="_mobile_search_filters_clear_all"></span>
-      <button class="btn btn-black ok">
-        <i class="material-icons">&#xE876;</i>
-        {l s='OK' d='Shop.Theme.Actions'}
-      </button>
-  </div> *}
-  
-  {$listing.rendered_facets nofilter}
-</div>
 {/if}

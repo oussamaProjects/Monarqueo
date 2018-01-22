@@ -25,9 +25,9 @@
 
 <section class="featured-products clearfix mt-3">
   <h1 class="h1 products-section-title text-uppercase">
-    {l s='New products' d='Shop.Theme.Catalog'}
+    {l s='Our offers of the moment' d='Shop.Theme.Catalog'}
   </h1>
-  <div class="products">
+  <div id="new-products" class="product-carousel custom-carousel owl-carousel owl-theme owl-loaded">
     {foreach from=$products item="product"}
       {include file="catalog/_partials/miniatures/product.tpl" product=$product}
     {/foreach}

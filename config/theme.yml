@@ -79,6 +79,7 @@ global_settings:
         - ps_imageslider
         - cdhomecategories
         - ps_bestsellers
+        - ps_newproducts
         - ps_featuredproducts
         - editorial
       displayFooterBefore:
@@ -105,6 +106,8 @@ global_settings:
         - prestablog 
       displayProductWSExtra:
         - advansedwishlist
+      displayProductWSExtra:
+        - ps_emailalerts
 
   image_types:
     cart_default:

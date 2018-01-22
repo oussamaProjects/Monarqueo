@@ -32,7 +32,7 @@
              
         {/foreach}
 
-        {if $depth === 1}
+        {* {if $depth === 1}
           <li class="category"  id="categoryMarque">
             <a class="dropdown-item dropdown-submenu" href="#" data-depth="1"> 
               Marque
@@ -49,7 +49,7 @@
               </ul>
             </div>
           </li>
-        {/if}
+        {/if} *}
 
       </ul>
     {/if}

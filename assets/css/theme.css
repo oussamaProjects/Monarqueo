@@ -8160,32 +8160,28 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
       background: #f5f5f5; }
 
 .mailalert {
-  padding: 0.9375rem 0; }
+  padding: 0.9375rem 0;
+  position: relative; }
   .mailalert p {
     margin-bottom: 10px; }
-  .mailalert .mailalert_container {
-    width: 17.5rem;
-    max-width: 50%;
-    position: relative; }
-    .mailalert .mailalert_container input[type='email'] {
-      height: 2.5rem;
-      width: 100%;
-      border: 1px solid #cccccc;
-      padding: 0 0.9375rem; }
-    .mailalert .mailalert_container .envoyer {
-      color: #292627;
-      text-align: center;
-      height: 2.5rem;
-      line-height: 2.5rem;
-      width: 2.5rem;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: initial;
-      font-weight: 600; }
-      .mailalert .mailalert_container .envoyer:hover {
-        background-color: #f5f5f5; }
+  .mailalert input[type='email'] {
+    height: 2.5rem;
+    float: left;
+    border: 1px solid #cccccc;
+    padding: 0 0.9375rem; }
+  .mailalert .envoyer {
+    color: #292627;
+    text-align: center;
+    border: 1px solid #cccccc;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    width: 2.5rem;
+    display: inline-block;
+    font-weight: 600; }
+    .mailalert .envoyer:hover {
+      background-color: #f5f5f5; }
+  .mailalert span {
+    color: #ef1726; }
 
 @media (max-width: 767px) {
   .form-control-label {
@@ -10704,7 +10700,7 @@ body#checkout {
 #blockcart-modal {
   padding: 0; }
   #blockcart-modal .modal-header {
-    margin: 1.25rem 15%;
+    margin: 1rem 15%;
     border-bottom: 1px solid #cccccc; }
     #blockcart-modal .modal-header .close {
       position: absolute;
@@ -10714,7 +10710,7 @@ body#checkout {
       left: initial;
       margin: 0; }
   #blockcart-modal .modal-body {
-    padding: 1.25rem 10% 2.5rem; }
+    padding: 1rem 10% 1.5rem; }
     #blockcart-modal .modal-body .divide-right span {
       display: inline-block;
       margin-bottom: 0.3125rem; }
@@ -10746,7 +10742,9 @@ body#checkout {
       border-radius: 0;
       outline: 0;
       width: 970px;
-      max-width: 100%; }
+      max-width: 100%;
+      max-height: 100%;
+      overflow-y: scroll; }
   #blockcart-modal .product-image {
     width: 100%; }
   #blockcart-modal .modal-title {
@@ -10763,7 +10761,7 @@ body#checkout {
   #blockcart-modal .cart-content .cart-info-top {
     text-align: center; }
     #blockcart-modal .cart-content .cart-info-top .product-image {
-      margin: 1.25rem auto; }
+      margin: 0.625rem auto; }
     #blockcart-modal .cart-content .cart-info-top .product-title {
       color: #292627;
       margin: 0.625rem 0;
@@ -10799,11 +10797,15 @@ body#checkout {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
-    padding-top: 2.5rem; }
+    padding-top: 1.5rem; }
     #blockcart-modal .cart-content .cart-content-btn a {
       margin-left: auto; }
   #blockcart-modal .divide-right {
     border-right: #9d9d9d 1px solid; }
+  @media (max-width: 767px) {
+    #blockcart-modal .modal-title {
+      font-size: 1.5rem;
+      line-height: 2rem; } }
 
 .product-images > li.thumb-container {
   display: inline; }
@@ -13702,6 +13704,9 @@ textarea.form-control {
   background-color: #f5f5f5;
   max-width: 100%;
   overflow: hidden; }
+
+.custom-carousel.product-carousel .owl-nav [class*=owl-] {
+  margin-top: -3.125rem; }
 
 .custom-carousel .owl-nav {
   display: -webkit-box;

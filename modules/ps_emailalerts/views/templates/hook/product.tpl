@@ -24,14 +24,14 @@
 *}
 
 <div class="js-mailalert mailalert" data-url="{url entity='module' name='ps_emailalerts' controller='actions' params=['process' => 'add']}">
-	<p>{l s='Notify me when available' d='Modules.Mailalerts.Shop'}</p>
-	<div class="mailalert_container">
-		{if isset($email) AND $email}
-			<input type="email" placeholder="{l s='Your e-mail' d='Modules.Mailalerts.Shop'}"/> 
-		{/if}
-		<input type="hidden" value="{$id_product}"/>
-		<input type="hidden" value="{$id_product_attribute}"/>
+	{if isset($email) AND $email}
+		<p>{l s='Notify me when available' d='Modules.Mailalerts.Shop'}</p>
+		<input type="email" placeholder="{l s='Your e-mail' d='Modules.Mailalerts.Shop'}"/> 
 		<a href="#" rel="nofollow" onclick="return addNotification();" class="envoyer">{l s='OK' d='Modules.Mailalerts.Shop'}</a>
-		<span style="display:none;"></span>
-	</div>
+	{else}
+		<a href="#" rel="nofollow" onclick="return addNotification();"><p>{l s='Notify me when available' d='Modules.Mailalerts.Shop'}</p></a>
+	{/if}
+	<input type="hidden" value="{$id_product}"/>
+	<span style="display:none;"></span>
+	<input type="hidden" value="{$id_product_attribute}"/>
 </div>

@@ -26,7 +26,7 @@
   <h1 class="h1 products-section-title text-uppercase">
     {l s='Best Sellers' d='Shop.Theme.Catalog'}
   </h1>
-  <div id="bestsellers-products" class="custom-carousel owl-carousel owl-theme owl-loaded">
+  <div id="bestsellers-products" class="product-carousel custom-carousel owl-carousel owl-theme owl-loaded">
     {foreach from=$products item="product"}
       {include file="catalog/_partials/miniatures/product.tpl" product=$product}
     {/foreach}

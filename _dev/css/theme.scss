@@ -576,6 +576,13 @@
 }
 
 .custom-carousel{  
+  &.product-carousel{
+    .owl-nav{ 
+      [class*=owl-]{ 
+        margin-top: oe_rem(-50px); 
+      }
+    }
+  }
   .owl-nav{   
     @include flex(center, space-between, row);
     margin: 0;

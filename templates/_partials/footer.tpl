@@ -70,7 +70,7 @@
        {l s='%copyright% %year% Monarqueo Tous droits réservés' sprintf=['%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'} 
       </span>
       <span class="sprt"> - </span>
-      <a class="_blank" href="{url entity='cms' id=2 }" target="_blank">
+      <a class="_blank" href="{url entity='cms' id=2 }">
         {l s='Mentions légales' d='Shop.Theme.Global'}
       </a>
       <span class="sprt"> - </span>
