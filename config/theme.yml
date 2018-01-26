@@ -57,6 +57,7 @@ global_settings:
       - ps_linklist 
       - ps_imageslider
       - ps_bestsellers
+      - ps_newproducts
       - ps_featuredproducts
       - cdhomecategories
       - editorial
@@ -106,7 +107,6 @@ global_settings:
         - prestablog 
       displayProductWSExtra:
         - advansedwishlist
-      displayProductWSExtra:
         - ps_emailalerts
 
   image_types:
@@ -124,15 +124,15 @@ global_settings:
       scope: [products, manufacturers, suppliers]
     home_default:
       width: 250
-      height: 250
+      height: 337
       scope: [products]
     large_default:
       width: 800
       height: 800
       scope: [products, manufacturers, suppliers]
     category_default:
-      width: 141
-      height: 180
+      width: 1110
+      height: 270
       scope: [categories]
     stores_default:
       width: 170
