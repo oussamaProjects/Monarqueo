@@ -61,7 +61,7 @@
     background: $gray-darker;
     height: oe_rem(40px); 
     @include flex(center, space-between, row);
-    padding: 0; 
+    padding: 0 oe_rem(0px); 
 
     #menu-icon {
       vertical-align: middle;

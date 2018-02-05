@@ -146,7 +146,7 @@
   padding: oe_rem(10px) 0;
   background: white;
   overflow-y: scroll;
-  height: oe_rem(350px);
+  height: oe_rem(500px);
   @include oe_box-shadow;
   #top-menu {
     margin-bottom: oe_rem(10px);
@@ -232,8 +232,7 @@
           }
         }
       }
-      ul { 
-      }
+      
       li > a {
         padding: 0;
         border-bottom: none;

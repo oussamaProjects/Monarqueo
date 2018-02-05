@@ -8604,7 +8604,7 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
   padding: 0.625rem 0;
   background: white;
   overflow-y: scroll;
-  height: 21.875rem;
+  height: 31.25rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   #mobile_top_menu_wrapper #top-menu {
     margin-bottom: 0.625rem; }
@@ -13131,7 +13131,7 @@ textarea.form-control {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
-    padding: 0; }
+    padding: 0 0; }
     #header .header-nav #menu-icon {
       vertical-align: middle;
       cursor: pointer; }
