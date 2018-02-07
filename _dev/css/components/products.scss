@@ -104,7 +104,7 @@
   .qty, .add {
     float: left;
     display: inline-flex;
-    margin-top: 1rem !important;
+    margin-top: oe_rem(5px) !important;
     margin-bottom: 0.5rem;
   }
   .qty {
@@ -209,7 +209,7 @@
 }
 
 .product-discount {
-  color: $gray-light;
+  color: $gray-dark;
   .regular-price {
     text-decoration: line-through;
     font-weight: normal;
@@ -309,8 +309,7 @@
         max-width: initial;
       }
       .image-caption {
-        background: white;
-        width: 800px;
+        background: white; 
         padding: 0.625rem 1.25rem;
         border-top: $gray-light 1px solid;
         p {
@@ -467,11 +466,11 @@
   > li.thumb-container {
     display: inline;
     > .thumb {
-      @include oe_box-shadow;
+      border: $gray-lighter 1px solid; 
       cursor: pointer;
       margin-bottom: $small-space;
       .images-container & {
-        margin-right: 0.8125rem;
+        margin-right: 2.4rem;
       }
       &.selected,
       &:hover {
@@ -500,8 +499,8 @@
   i {
     position: absolute;
     bottom: 1.625rem;
-    height: 100px;
-    line-height: 100px;
+    height: oe_rem(136px);
+    line-height: oe_rem(136px);
     cursor: pointer;
   }
   .left {
@@ -594,6 +593,11 @@ li.product-flag {
       right: 0;
     } 
     &.on-sale {
+      background: $brand-danger;
+      color: white;
+      left:0;
+    }
+    &.discount {
       background: $brand-danger;
       color: white;
       left:0;

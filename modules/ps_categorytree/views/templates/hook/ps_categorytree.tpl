@@ -25,17 +25,19 @@
 
 {function name="categories" nodes=[] depth=0}
   {strip}
-  
-  
-  
+    {assign var='category_id' value="0"}
+  {if isset($category.id)}
+    {assign var='category_id' value=$category.id}
+  {/if}
+ 
     {if $nodes|count}
       <ul class="category-sub-menu">
         {foreach from=$nodes item=node}
           <li data-depth="{$depth}">
             {if $depth===0 or $depth===1}
-              <a href="{$node.link}" class="{if $node.id == $category.id}active collapse_cat_menu{/if}">{$node.name}</a>
+              <a href="{$node.link}" class="{if $node.id == $category_id}active collapse_cat_menu{/if}">{$node.name}</a>
               {if $node.children}
-                <div class="navbar-toggler collapse-icons  {$node.name} {if $node.id == $category.id}collapse_cat_menu{/if}" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
+                <div class="navbar-toggler collapse-icons  {$node.name} {if $node.id == $category_id}collapse_cat_menu{/if}" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
                   <i class="material-icons add">&#xE145;</i>
                   <i class="material-icons remove">&#xE15B;</i>
                 </div>
@@ -44,7 +46,7 @@
                 </div>
               {/if}
             {else}
-              <a class="category-sub-link{if $node.id == $category.id} active collapse_cat_menu{/if}" href="{$node.link}">{$node.name}</a>
+              <a class="category-sub-link{if $node.id == $category_id} active collapse_cat_menu{/if}" href="{$node.link}">{$node.name}</a>
               {if $node.children}
                 {* <span class="arrows" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
                   <i class="material-icons arrow-right">&#xE315;</i>
@@ -67,8 +69,8 @@
   <ul class="category-top-menu">
     <li><a class="text-uppercase h4" href="{$categories.link nofilter}">{$categories.name}</a></li>
     <li>{categories nodes=$categories.children}
-    <ul class="category-sub-menu" style="margin:0;">
-    <li data-depth="0"><a href="http://demo.comenscene.com/oussama/monarqueo/promotions">{l s='Promotions' d='Shop.Theme.Catalog'} </a></li>        
+    <ul class="category-sub-menu" style="margin:0;">      
+    <li data-depth="0"><a href="{url entity='prices-drop'}">{l s='Promotions' d='Shop.Theme.Catalog'} </a></li>        
     </ul>
     </li>
   </ul> 
