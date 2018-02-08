@@ -1,4 +1,3 @@
-<div class="variant-links">
 
   <div class="variant-title">
     {l s='Couleur(s) disponible(s) :' d='Shop.Theme.Actions'}
@@ -17,11 +16,4 @@
     ><span class="sr-only">{$variant.name}</span></a>
   {/foreach}
   <a href="{$product.url}"><span class="js-count-color count"></span></a>
- 
-  {block name='product_reviews'}
-    {hook h='displayVariantLinks' product=$product}
-  {/block}
-
-</div>
-
 

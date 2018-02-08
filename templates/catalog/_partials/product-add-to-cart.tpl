@@ -26,6 +26,17 @@
 
   <div class="product-add-to-cart">
     {if !$configuration.is_catalog}
+
+      {block name='product_out_of_stock'}
+        <div class="product-out-of-stock">
+          {hook h='actionProductOutOfStock' product=$product}
+        </div>
+      {/block} 
+      
+      {block name='product_variants'}
+        {include file='catalog/_partials/product-variants.tpl'}
+      {/block} 
+
       <span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
 
       {block name='product_quantity'}

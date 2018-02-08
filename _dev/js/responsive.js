@@ -70,7 +70,7 @@ function toggleMobileFixed()
 			if (scrollTop  >= 20) { $('.header-nav').stop().addClass("fixed"); }
 			else{ $('.header-nav').stop().removeClass("fixed"); }
 		});
-		console.log("mobile");
+		// console.log("mobile");
 	} else { 
 		// Oussama
 		$('.header-nav').stop().removeClass("fixed");
@@ -79,7 +79,7 @@ function toggleMobileFixed()
 			if (scrollTop >= 20) { $('.header-top').stop().addClass("fixed"); }
 			else{ $('.header-top').stop().removeClass("fixed"); }
 		}); 
-		console.log("desktop");		
+		// console.log("desktop");		
 	}
 	prestashop.emit('responsive update', {
 		mobile: prestashop.responsive.mobile

@@ -99,13 +99,21 @@
           
         {/block}
       </div> 
+      {* {if !$product.main_variants} no-variants{/if} *}
+      <div class="highlighted-informations hidden-sm-down">
+        <div class="variant-links">
 
-      <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down">
-        {block name='product_variants'}
-          {if $product.main_variants}
-            {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants} 
-          {/if}
-        {/block}
+          {block name='product_variants'}
+            {if $product.main_variants}
+              {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants} 
+            {/if}
+          {/block}
+          
+          {block name='product_reviews'}
+            {hook h='displayVariantLinks' product=$product}
+          {/block}
+
+        </div>
       </div>
 
     </div>

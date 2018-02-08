@@ -110,9 +110,6 @@
                 <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
                 <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
 
-                {block name='product_variants'}
-                  {include file='catalog/_partials/product-variants.tpl'}
-                {/block}
 
                 {block name='product_pack'}
                   {if $packItems}
@@ -129,13 +126,7 @@
 
                 {block name='product_discounts'}
                   {include file='catalog/_partials/product-discounts.tpl'}
-                {/block}
-
-                {block name='product_out_of_stock'}
-                  <div class="product-out-of-stock">
-                    {hook h='actionProductOutOfStock' product=$product}
-                  </div>
-                {/block}
+                {/block} 
 
                 {block name='product_add_to_cart'} 
                       {include file='catalog/_partials/product-add-to-cart.tpl'} 

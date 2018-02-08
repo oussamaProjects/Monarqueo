@@ -99,23 +99,7 @@
 
     
 
-    {block name='product_availability'}
-      <span id="product-availability">
-        {if $product.show_availability && $product.availability_message}
-          {if $product.availability == 'available'}
-            <i class="material-icons product-available">fiber_manual_record</i>
-            {l s='available' d='Shop.Theme.Catalog'}
-          {elseif $product.availability == 'last_remaining_items'}
-            {* <i class="material-icons product-last-items">fiber_manual_record</i>
-            {l s='last_remaining_items' d='Shop.Theme.Catalog'} *}
-          {else}
-            <i class="material-icons product-unavailable">fiber_manual_record</i>
-            {l s='unavailable' d='Shop.Theme.Catalog'}
-          {/if}
-          {* {$product.availability_message} *}
-        {/if} 
-      </span>
-    {/block}
+    
     
     {block name='product_availability_date'}
       {if $product.availability_date}

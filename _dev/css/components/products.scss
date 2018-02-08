@@ -302,8 +302,8 @@
     border: none;
     padding: 0;
     .modal-body {
-      display: flex;
-      margin-left: -30%;
+      display: flex; 
+      padding: 0;
       .product-cover-modal {
         background: white;
         max-width: initial;
@@ -322,8 +322,9 @@
       .mask {
         position: relative;
         overflow: hidden;
-        max-height: 49.38rem;
+        max-height: oe_rem(770px);
         margin-top: 2.188rem;
+        margin-bottom: 2.188rem;
         z-index: 1;
         &.nomargin {
           margin-top: 0;
@@ -332,12 +333,12 @@
       .product-images {
         margin-left: $extra-large-space;
         img {
-          width: 9.25rem;
+          width: oe_rem(100px);
           max-width: initial;
           cursor: pointer;
           background: white;
           &:hover {
-            border: $gray 3px solid;
+            border: $gray 2px solid;
           }
         }
       }

@@ -19,7 +19,7 @@
         text-decoration: none;
         text-align: center;
         font-weight: 600;
-        text-transform: capitalize; 
+        text-transform: uppercase; 
     }
 
     .thumbnail-container {
@@ -131,8 +131,7 @@
     .variant-links {
         position: relative;
         text-align: center; 
-        width: 100%;  
-        min-height: 2.5rem;
+        width: 100%;   
         padding: oe_rem(10px) oe_rem(20px);
         background: rgba(0, 0, 0, 0.45);
         span,

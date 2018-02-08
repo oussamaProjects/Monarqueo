@@ -151,7 +151,7 @@
     width: 100%;
     height: oe_rem(50px);    
     color: $gray-darker; 
-    padding: $small-space $small-space $small-space $medium-space;
+    padding: $small-space oe_rem(4px) $small-space $small-space;
     cursor: pointer;
     > i {
       margin-left: auto;
