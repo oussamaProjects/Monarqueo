@@ -8553,7 +8553,6 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
               flex: initial;
       overflow: hidden;
       width: 25% !important;
-      max-height: 18.75rem;
       margin-bottom: 1.25rem;
       padding: 0.3125rem 0.9375rem 0; }
       .top-menu .sub-menu .top-menu[data-depth="1"] > li .top-menu[data-depth="2"] {
