@@ -70,8 +70,7 @@
       z-index: 6500;
       padding: oe_rem(16px) 0;
       max-height: oe_rem(500px);
-      min-height: oe_rem(140px);
-      overflow-y: scroll;
+      min-height: oe_rem(140px); 
       box-shadow: rgba(0,0,0,.1) 0 5px 10px 0;
       transition: max-height .4s linear,min-height .4s linear,-webkit-transform .2s linear;
       transition: max-height .4s linear,min-height .4s linear,transform .2s linear;

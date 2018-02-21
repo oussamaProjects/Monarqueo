@@ -8508,7 +8508,6 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
     padding: 1rem 0;
     max-height: 31.25rem;
     min-height: 8.75rem;
-    overflow-y: scroll;
     box-shadow: rgba(0, 0, 0, 0.1) 0 5px 10px 0;
     transition: max-height .4s linear,min-height .4s linear,-webkit-transform .2s linear;
     transition: max-height .4s linear,min-height .4s linear,transform .2s linear;

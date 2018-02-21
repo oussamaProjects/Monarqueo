@@ -64,6 +64,7 @@ global_settings:
       - likeboxfree
       - prestablog
       - bestkit_listattributes
+      - ps_categoryproducts
   hooks:
     modules_to_hook:
       displayNav1:
