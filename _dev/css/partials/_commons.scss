@@ -651,3 +651,7 @@ input, textarea {
         top: oe_rem(25px);
     }
 }
+.required_fileds{
+    color: $brand-danger;
+    font-size: oe_rem(14px);
+}

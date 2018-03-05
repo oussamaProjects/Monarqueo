@@ -8213,6 +8213,10 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
     right: 0.625rem;
     top: 1.5625rem; }
 
+.required_fileds {
+  color: #ef1726;
+  font-size: 0.875rem; }
+
 #page_banner {
   width: 100%;
   height: auto;

@@ -26,9 +26,12 @@
 <div id="js-product-list">
   <div class="products">
     {foreach from=$listing.products item="product"}
-      {block name='product_miniature'}
-        {include file='catalog/_partials/miniatures/product.tpl' product=$product}
-      {/block}
+      {* {$product.quantity} *}
+      {* {if $product.quantity_all_versions > 2} *}
+        {block name='product_miniature'}
+          {include file='catalog/_partials/miniatures/product.tpl' product=$product}
+        {/block}
+      {* {/if} *}
     {/foreach}
   </div>
 

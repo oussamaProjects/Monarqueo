@@ -111,6 +111,9 @@
       </footer>
 
     </form>
+    
+    <span class="required_fileds">*{l s='Required' d='Modules.Contactform.Shop'}</span>
+    
   </section>
 </div>
 

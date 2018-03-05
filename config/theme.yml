@@ -61,6 +61,7 @@ global_settings:
       - ps_featuredproducts
       - cdhomecategories
       - editorial
+      - contactform
       - likeboxfree
       - prestablog
       - bestkit_listattributes

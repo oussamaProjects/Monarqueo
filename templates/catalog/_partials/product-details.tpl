@@ -28,14 +28,14 @@
   {/block}
 
   {block name='product_quantities'}
-    {* {if $product.show_quantities}
-      <ul class="product-quantities">
+    {if $product.show_quantities}
+      <ul class="product-quantities" style="display:none;">
         <li>
           {l s='In stock' d='Shop.Theme.Catalog'}: 
           <span data-stock="{$product.quantity}" data-allow-oosp="{$product.allow_oosp}">{$product.quantity} {$product.quantity_label}</span>
         </li>
       </ul>
-    {/if} *}
+    {/if}
   {/block}
 
   {block name='product_features'}

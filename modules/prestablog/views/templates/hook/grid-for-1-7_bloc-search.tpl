@@ -24,7 +24,7 @@
 		<div class="block_content">
 			<div class="form_search">
 				<form action="{PrestaBlogUrl}" method="post" id="prestablog_bloc_search">
-				<input id="prestablog_search" class="search_query form-control ac_input" type="text" value="{$prestablog_search_query|escape:'htmlall':'UTF-8'}" placeholder="{l s='Search...' mod='prestablog'}" name="prestablog_search" autocomplete="off">
+				<input id="prestablog_search" class="search_query form-control ac_input" type="text" value="{$prestablog_search_query|escape:'htmlall':'UTF-8'}" placeholder="{l s='Recherche...' mod='prestablog'}" name="prestablog_search" autocomplete="off">
 					<button class="btn btn-default button-search" type="submit"></button>
 					<div class="clear"></div>
 				</form>
