@@ -150,7 +150,7 @@
   <div class="block-reassurance-item col-md-4">
     <i class="fa fa-envelope" aria-hidden="true"></i>
     <div class="title">{l s='E-mail' d='Shop.Theme.Global'} </div>
-    <div class="description">{$shop.email}</div>
+    <div class="description"><a href="mailTo:{$shop.email}">{$shop.email}</a></div>
   </div>
 
   <div class="clearfix"></div>

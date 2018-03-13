@@ -29,7 +29,7 @@
   </h1>
   <div id="new-products" class="product-carousel custom-carousel owl-carousel owl-theme owl-loaded">
     {foreach from=$products item="product"}
-      {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+        {include file="catalog/_partials/miniatures/product.tpl" product=$product}
     {/foreach}
   </div> 
 </section>

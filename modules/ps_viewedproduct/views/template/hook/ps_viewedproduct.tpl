@@ -25,8 +25,8 @@
 <section class="featured-products clearfix mt-3">
   <h2>{l s='Viewed products' d='Shop.Theme.Catalog'}</h2>
   <div class="products">
-    {foreach from=$products item="product"}
-      {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+    {foreach from=$products item="product"} 
+        {include file="catalog/_partials/miniatures/product.tpl" product=$product}
     {/foreach}
   </div>
 </section>

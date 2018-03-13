@@ -251,7 +251,7 @@
           <div class="products">
             {foreach from=$accessories item="product_accessory"}
               {block name='product_miniature'}
-                {include file='catalog/_partials/miniatures/product.tpl' product=$product_accessory}
+              {include file='catalog/_partials/miniatures/product.tpl' product=$product_accessory}
               {/block}
             {/foreach}
           </div>

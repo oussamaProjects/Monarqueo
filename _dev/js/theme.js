@@ -91,7 +91,17 @@ $(document).ready(() => {
      }  
   },1);
   
+  $(document).on( 'scroll', function(){
+    if ($(window).scrollTop() > 100) {
+        $('.GoToHeader').addClass('show');
+    } else {
+        $('.GoToHeader').removeClass('show');
+    }
+  });
   
- 
+  $('.GoToHeader').click(function(){
+    $('html').animate({scrollTop:0}, 'slow');
+    return false;
+  }); 
 
 });

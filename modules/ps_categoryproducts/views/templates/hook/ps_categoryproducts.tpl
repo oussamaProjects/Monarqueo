@@ -23,12 +23,12 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <section class="featured-products clearfix mt-3">
-  <div class="products-section-title"> 
-      {l s='Vous aimerez aussi' d='Shop.Theme.Catalog'}
-  </div>
-  <div class="products">
-      {foreach from=$products item="product"}
-          {include file="catalog/_partials/miniatures/product.tpl" product=$product}
-      {/foreach}
-  </div>
+    <div class="products-section-title"> 
+        {l s='Vous aimerez aussi' d='Shop.Theme.Catalog'}
+    </div>
+    <div class="products">
+        {foreach from=$products item="product"}
+        {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+        {/foreach}
+    </div>
 </section>

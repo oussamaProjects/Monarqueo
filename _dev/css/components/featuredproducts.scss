@@ -1,5 +1,22 @@
 #products,.featured-products,.product-accessories,.product-miniature  {
     padding-bottom: oe_rem(20px);
+    .magasin-message {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 5.625rem;
+        background: #0080006b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        span{
+            font-size: oe_rem(16px);
+            color: white;
+            font-weight: 700;
+        }
+    }
     .products {
         display: flex;
         flex-wrap: wrap;

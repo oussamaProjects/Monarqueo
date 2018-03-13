@@ -80,3 +80,5 @@
     {/block} 
   </div> 
 </div>
+
+<div><a href="#GoToHeader" class="GoToHeader"> <i class="fa fa-angle-up"></i></a></div>

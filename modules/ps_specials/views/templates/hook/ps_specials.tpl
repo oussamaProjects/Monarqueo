@@ -29,7 +29,7 @@
   </h1>
   <div class="products">
     {foreach from=$products item="product"}
-      {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+        {include file="catalog/_partials/miniatures/product.tpl" product=$product}
     {/foreach}
   </div>
   <a class="all-product-link float-xs-left float-md-right h4" href="{$allSpecialProductsLink}">

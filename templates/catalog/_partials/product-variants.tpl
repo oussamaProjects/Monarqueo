@@ -25,9 +25,7 @@
 <div class="product-variants">
 
   {foreach from=$groups key=id_attribute_group item=group}
-    <div class="clearfix product-variants-item">
-      {* <span class="control-label">{$group.name}</span> *}
-      
+    <div class="clearfix product-variants-item"> 
       {if $group.group_type == 'color'}
 
       <div class="product-variants-item-content oe_dropdown_menu">
@@ -56,7 +54,8 @@
           data-product-attribute="{$id_attribute_group}"
           name="group[{$id_attribute_group}]">
           {foreach from=$group.attributes key=id_attribute item=group_attribute}
-            <option value="{$id_attribute}" title="{$group_attribute.name}"{if $group_attribute.selected} selected="selected"{/if}>{$group_attribute.name}</option>
+            <option value="{$id_attribute}" title="{$group_attribute.name}"{if $group_attribute.selected} selected="selected"{/if}>{$group_attribute.name}
+            </option>
           {/foreach}
         </select>
       {elseif $group.group_type == 'radio'}
@@ -76,18 +75,22 @@
 
   {block name='product_availability'}
     <span id="product-availability">
+    
       {if $product.show_availability && $product.availability_message}
         {if $product.availability == 'available'}
           <i class="material-icons product-available">fiber_manual_record</i>
           {l s='available' d='Shop.Theme.Catalog'}
         {elseif $product.availability == 'last_remaining_items'}
           <i class="material-icons product-last-items">fiber_manual_record</i>
-          {l s='last_remaining_items' d='Shop.Theme.Catalog'}
+          {l s='Disponible en magasin uniquement' d='Shop.Theme.Catalog'}
         {else}
           <i class="material-icons product-unavailable">fiber_manual_record</i>
           {l s='unavailable' d='Shop.Theme.Catalog'}
         {/if}
         {* {$product.availability_message} *}
+        {* <pre>
+        {$product|var_dump}
+        </pre> *}
       {/if} 
     </span>
   {/block}

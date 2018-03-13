@@ -27,11 +27,9 @@
   <div class="products">
     {foreach from=$listing.products item="product"}
       {* {$product.quantity} *}
-      {* {if $product.quantity_all_versions > 2} *}
         {block name='product_miniature'}
           {include file='catalog/_partials/miniatures/product.tpl' product=$product}
         {/block}
-      {* {/if} *}
     {/foreach}
   </div>
 

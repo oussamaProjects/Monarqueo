@@ -8217,6 +8217,50 @@ input:active:-moz-placeholder, textarea:active:-moz-placeholder {
   color: #ef1726;
   font-size: 0.875rem; }
 
+.GoToHeader {
+  height: 1.875rem;
+  width: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-pack: center;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  position: fixed;
+  top: initial;
+  right: 6.25rem;
+  bottom: 6.25rem;
+  left: initial;
+  background: #292627;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  z-index: 99999999;
+  transition: all 0.5s ease-in-out; }
+  .GoToHeader.show {
+    visibility: visible;
+    cursor: pointer;
+    opacity: 1.0; }
+  .GoToHeader:hover, .GoToHeader:active {
+    color: white; }
+  @media (max-width: 1199px) {
+    .GoToHeader {
+      display: none; } }
+
 #page_banner {
   width: 100%;
   height: auto;
